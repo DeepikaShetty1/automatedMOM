@@ -1,0 +1,28 @@
+Flask
+flasgger
+omegaconf
+nemo_toolkit[asr]
+nemo_toolkit[speaker]
+python-dotenv
+hydra-core
+lightning
+lhotse
+einops
+sentencepiece
+pandas
+jiwer
+pyannote.audio
+webdataset
+datasets
+editdistance
+IPython
+# PyTorch and related libraries.
+# NOTE: For GPU support, you MUST install these with a specific --index-url
+# that matches your CUDA version, or use Conda.
+# Example pip install command for CUDA 11.8:
+# pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu118
+# Example pip install command for CUDA 12.1:
+# pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu121
+torch==2.3.1
+torchvision==0.18.1
+torchaudio==2.3.1

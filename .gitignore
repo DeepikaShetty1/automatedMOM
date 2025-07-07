@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.env # Ignore your .env file which contains environment variables
+.pytest_cache/
+.mypy_cache/
+.vscode/ # If you use VS Code, ignore its settings
+logs/ # Ignore your application logs
+tmp_audio/ # Ignore temporary audio processing directories
+nemo_init_*/ # Ignore NeMo initialization temp directories
+nemo_out_*/ # Ignore NeMo output temp directories
+*.wav # Ignore any raw or converted WAV files you might be testing locally
+*.json # If any temporary JSON files are generated (e.g., NeMo manifests that aren't source-controlled)
+.ipynb_checkpoints/ # If you have any Jupyter notebooks

@@ -1,0 +1,1527 @@
+2025-06-29 10:05:57,949 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-29 10:05:57,949 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-29 10:05:57,949 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 175, in load_nemo_components
+    nemo_cfg.diarizer.speaker_embeddings.model_path = 'SpeakerVerification_titanet_large'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'model_path'
+2025-06-29 10:05:57,955 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-29 10:06:01,558 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.48.24:5000
+2025-06-29 10:06:01,559 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-29 10:06:01,593 - werkzeug - INFO -  * Restarting with stat
+2025-06-29 10:06:02,532 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-29 10:06:02,533 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-29 10:06:02,534 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 175, in load_nemo_components
+    nemo_cfg.diarizer.speaker_embeddings.model_path = 'SpeakerVerification_titanet_large'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'model_path'
+2025-06-29 10:06:02,535 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-29 10:06:02,598 - werkzeug - WARNING -  * Debugger is active!
+2025-06-29 10:06:02,626 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 16:19:59,456 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 16:19:59,457 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 16:19:59,459 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 16:19:59,560 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 16:19:59,561 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 16:19:59,563 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 77, in load_nemo_components
+    asr_decoder_ts_instance = ASRDecoderTimeStamps(cfg_diarizer=nemo_cfg.diarizer) # type: ignore
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 317, in __init__
+    self.manifest_filepath = cfg_diarizer.manifest_filepath
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\dictconfig.py", line 359, in __getattr__
+    self._format_and_raise(key=key, value=None, cause=e)
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\base.py", line 231, in _format_and_raise
+    format_and_raise(
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\_utils.py", line 899, in format_and_raise
+    _raise(ex, cause)
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\_utils.py", line 797, in _raise
+    raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\dictconfig.py", line 351, in __getattr__
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\dictconfig.py", line 451, in _get_impl
+    return self._resolve_with_default(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\basecontainer.py", line 96, in _resolve_with_default
+    raise MissingMandatoryValue("Missing mandatory value: $FULL_KEY")
+omegaconf.errors.MissingMandatoryValue: Missing mandatory value: diarizer.manifest_filepath
+    full_key: diarizer.manifest_filepath
+    object_type=dict
+2025-06-30 16:19:59,574 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 16:20:01,094 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.24:5000
+2025-06-30 16:20:01,095 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-30 16:20:01,116 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 16:20:20,979 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 16:20:20,979 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 16:20:20,980 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 16:20:21,010 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 16:20:21,011 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 16:20:21,013 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 77, in load_nemo_components
+    asr_decoder_ts_instance = ASRDecoderTimeStamps(cfg_diarizer=nemo_cfg.diarizer) # type: ignore
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 317, in __init__
+    self.manifest_filepath = cfg_diarizer.manifest_filepath
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\dictconfig.py", line 359, in __getattr__
+    self._format_and_raise(key=key, value=None, cause=e)
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\base.py", line 231, in _format_and_raise
+    format_and_raise(
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\_utils.py", line 899, in format_and_raise
+    _raise(ex, cause)
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\_utils.py", line 797, in _raise
+    raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\dictconfig.py", line 351, in __getattr__
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\dictconfig.py", line 451, in _get_impl
+    return self._resolve_with_default(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\basecontainer.py", line 96, in _resolve_with_default
+    raise MissingMandatoryValue("Missing mandatory value: $FULL_KEY")
+omegaconf.errors.MissingMandatoryValue: Missing mandatory value: diarizer.manifest_filepath
+    full_key: diarizer.manifest_filepath
+    object_type=dict
+2025-06-30 16:20:21,019 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 16:20:21,039 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 16:20:21,051 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 16:22:39,251 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-06-30 16:22:41,124 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 16:23:29,527 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 16:23:29,527 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 16:23:29,529 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 16:23:29,563 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 16:23:29,563 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 16:23:29,568 - nemo_processor - INFO - Set placeholder manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 16:23:29,568 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 84, in load_nemo_components
+    asr_decoder_ts_instance = ASRDecoderTimeStamps(cfg_diarizer=nemo_cfg.diarizer) # type: ignore
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 325, in __init__
+    self.AUDIO_RTTM_MAP = audio_rttm_map(self.manifest_filepath)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\speaker_utils.py", line 90, in audio_rttm_map
+    with open(manifest, 'r') as inp_file:
+         ^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/dummy_manifest.json'
+2025-06-30 16:23:29,573 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 16:23:30,477 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.24:5000
+2025-06-30 16:23:30,478 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-30 16:23:30,483 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 16:23:53,004 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 16:23:53,004 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 16:23:53,004 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 16:23:53,036 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 16:23:53,036 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 16:23:53,039 - nemo_processor - INFO - Set placeholder manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 16:23:53,039 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 84, in load_nemo_components
+    asr_decoder_ts_instance = ASRDecoderTimeStamps(cfg_diarizer=nemo_cfg.diarizer) # type: ignore
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 325, in __init__
+    self.AUDIO_RTTM_MAP = audio_rttm_map(self.manifest_filepath)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\speaker_utils.py", line 90, in audio_rttm_map
+    with open(manifest, 'r') as inp_file:
+         ^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/dummy_manifest.json'
+2025-06-30 16:23:53,046 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 16:23:53,066 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 16:23:53,075 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 16:48:19,914 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-06-30 16:48:24,702 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 16:48:47,588 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 16:48:47,589 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 16:48:47,589 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 16:48:47,622 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 16:48:47,622 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 16:48:47,624 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 79, in load_nemo_components
+    asr_decoder_ts_instance = ASRDecoderTimeStamps(cfg_diarizer=nemo_cfg.diarizer) # type: ignore
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 317, in __init__
+    self.manifest_filepath = cfg_diarizer.manifest_filepath
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\dictconfig.py", line 359, in __getattr__
+    self._format_and_raise(key=key, value=None, cause=e)
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\base.py", line 231, in _format_and_raise
+    format_and_raise(
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\_utils.py", line 899, in format_and_raise
+    _raise(ex, cause)
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\_utils.py", line 797, in _raise
+    raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\dictconfig.py", line 351, in __getattr__
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\dictconfig.py", line 451, in _get_impl
+    return self._resolve_with_default(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\basecontainer.py", line 96, in _resolve_with_default
+    raise MissingMandatoryValue("Missing mandatory value: $FULL_KEY")
+omegaconf.errors.MissingMandatoryValue: Missing mandatory value: diarizer.manifest_filepath
+    full_key: diarizer.manifest_filepath
+    object_type=dict
+2025-06-30 16:48:47,634 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 16:48:47,651 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 16:48:47,658 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 17:25:55,293 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-06-30 17:25:58,472 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 17:26:19,635 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 17:26:19,635 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 17:26:19,635 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 17:26:19,666 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 17:26:19,666 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 17:26:19,666 - nemo_processor - INFO - Ensured mandatory manifest_filepath and out_dir are present as placeholders for NeMo component initialization.
+2025-06-30 17:26:19,669 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 77, in load_nemo_components
+    asr_decoder_ts_instance = ASRDecoderTimeStamps(cfg_diarizer=nemo_cfg.diarizer) # type: ignore
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 325, in __init__
+    self.AUDIO_RTTM_MAP = audio_rttm_map(self.manifest_filepath)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\speaker_utils.py", line 90, in audio_rttm_map
+    with open(manifest, 'r') as inp_file:
+         ^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: ''
+2025-06-30 17:26:19,675 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 17:26:19,697 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 17:26:19,709 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 20:19:38,962 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 20:19:38,962 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 20:19:38,962 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 20:19:39,009 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 20:19:39,009 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 20:19:39,009 - nemo_processor - INFO - Ensured mandatory manifest_filepath and out_dir are present as placeholders for NeMo component initialization.
+2025-06-30 20:19:39,009 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 77, in load_nemo_components
+    asr_decoder_ts_instance = ASRDecoderTimeStamps(cfg_diarizer=nemo_cfg.diarizer) # type: ignore
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 325, in __init__
+    self.AUDIO_RTTM_MAP = audio_rttm_map(self.manifest_filepath)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\speaker_utils.py", line 90, in audio_rttm_map
+    with open(manifest, 'r') as inp_file:
+         ^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: ''
+2025-06-30 20:19:39,090 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 20:19:40,163 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.24:5000
+2025-06-30 20:19:40,165 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-30 20:19:40,179 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 20:19:59,232 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 20:19:59,232 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 20:19:59,232 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 20:19:59,254 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 20:19:59,257 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 20:19:59,259 - nemo_processor - INFO - Ensured mandatory manifest_filepath and out_dir are present as placeholders for NeMo component initialization.
+2025-06-30 20:19:59,259 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 77, in load_nemo_components
+    asr_decoder_ts_instance = ASRDecoderTimeStamps(cfg_diarizer=nemo_cfg.diarizer) # type: ignore
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 325, in __init__
+    self.AUDIO_RTTM_MAP = audio_rttm_map(self.manifest_filepath)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\speaker_utils.py", line 90, in audio_rttm_map
+    with open(manifest, 'r') as inp_file:
+         ^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: ''
+2025-06-30 20:19:59,262 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 20:19:59,284 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 20:19:59,294 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 20:20:17,031 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 20:20:17] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-30 20:20:17,198 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 20:20:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-30 20:20:32,833 - werkzeug - INFO - 192.168.242.24 - - [30/Jun/2025 20:20:32] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-30 20:20:33,261 - werkzeug - INFO - 192.168.242.24 - - [30/Jun/2025 20:20:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-30 20:28:51,469 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-06-30 20:28:54,779 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 20:29:15,834 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 20:29:15,835 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 20:29:15,835 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 20:29:15,875 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 20:29:15,876 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 20:29:15,878 - nemo_processor - INFO - Ensured mandatory manifest_filepath and out_dir are present as placeholders for NeMo component initialization.
+2025-06-30 20:29:15,884 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 78, in load_nemo_components
+    asr_decoder_ts_instance = ASRDecoderTimeStamps(cfg_diarizer=nemo_cfg.diarizer) # type: ignore
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 325, in __init__
+    self.AUDIO_RTTM_MAP = audio_rttm_map(self.manifest_filepath)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\speaker_utils.py", line 90, in audio_rttm_map
+    with open(manifest, 'r') as inp_file:
+         ^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: ''
+2025-06-30 20:29:15,917 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 20:29:15,939 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 20:29:15,951 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 20:29:20,774 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-06-30 20:29:22,525 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 20:32:01,492 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 20:32:01,493 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 20:32:01,493 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 20:32:01,522 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 20:32:01,523 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 20:32:01,524 - nemo_processor - INFO - Ensured mandatory manifest_filepath and out_dir are present as placeholders for NeMo component initialization.
+2025-06-30 20:32:01,525 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 78, in load_nemo_components
+    asr_decoder_ts_instance = ASRDecoderTimeStamps(cfg_diarizer=nemo_cfg.diarizer) # type: ignore
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 325, in __init__
+    self.AUDIO_RTTM_MAP = audio_rttm_map(self.manifest_filepath)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\speaker_utils.py", line 90, in audio_rttm_map
+    with open(manifest, 'r') as inp_file:
+         ^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: ''
+2025-06-30 20:32:01,528 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 20:32:02,456 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.24:5000
+2025-06-30 20:32:02,456 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-30 20:32:02,459 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 20:32:22,565 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 20:32:22,565 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 20:32:22,565 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 20:32:22,591 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 20:32:22,599 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 20:32:22,601 - nemo_processor - INFO - Ensured mandatory manifest_filepath and out_dir are present as placeholders for NeMo component initialization.
+2025-06-30 20:32:22,601 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 78, in load_nemo_components
+    asr_decoder_ts_instance = ASRDecoderTimeStamps(cfg_diarizer=nemo_cfg.diarizer) # type: ignore
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 325, in __init__
+    self.AUDIO_RTTM_MAP = audio_rttm_map(self.manifest_filepath)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\speaker_utils.py", line 90, in audio_rttm_map
+    with open(manifest, 'r') as inp_file:
+         ^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: ''
+2025-06-30 20:32:22,604 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 20:32:22,623 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 20:32:22,635 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 20:50:27,459 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-06-30 20:51:01,075 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 20:51:01,076 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 20:51:01,077 - nemo_processor - INFO - Created temporary directory for initialization: /tmp\nemo_init_temp_79221fe1-886c-4aad-93b5-7eade0291e1d
+2025-06-30 20:51:01,086 - nemo_processor - INFO - Created empty dummy WAV file at: /tmp\nemo_init_temp_79221fe1-886c-4aad-93b5-7eade0291e1d\init_dummy_audio.wav
+2025-06-30 20:51:01,087 - nemo_processor - INFO - Created dummy manifest file at: /tmp\nemo_init_temp_79221fe1-886c-4aad-93b5-7eade0291e1d\init_dummy_manifest.json
+2025-06-30 20:51:01,088 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 20:51:01,105 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 20:51:01,105 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 20:51:01,107 - nemo_processor - INFO - Assigned temporary manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 20:51:04,114 - nemo_processor - INFO - NeMo components loaded successfully.
+2025-06-30 20:51:04,116 - nemo_processor - INFO - Cleaned up temporary initialization directory: /tmp\nemo_init_temp_79221fe1-886c-4aad-93b5-7eade0291e1d
+2025-06-30 20:51:04,117 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 20:51:05,032 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.24:5000
+2025-06-30 20:51:05,032 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-30 20:51:05,039 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 20:51:19,671 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 20:51:19,673 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 20:51:19,673 - nemo_processor - INFO - Created temporary directory for initialization: /tmp\nemo_init_temp_c42cd161-4797-4462-a744-8511972c2a8d
+2025-06-30 20:51:19,681 - nemo_processor - INFO - Created empty dummy WAV file at: /tmp\nemo_init_temp_c42cd161-4797-4462-a744-8511972c2a8d\init_dummy_audio.wav
+2025-06-30 20:51:19,683 - nemo_processor - INFO - Created dummy manifest file at: /tmp\nemo_init_temp_c42cd161-4797-4462-a744-8511972c2a8d\init_dummy_manifest.json
+2025-06-30 20:51:19,683 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 20:51:19,700 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 20:51:19,701 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 20:51:19,701 - nemo_processor - INFO - Assigned temporary manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 20:51:21,451 - nemo_processor - INFO - NeMo components loaded successfully.
+2025-06-30 20:51:21,452 - nemo_processor - INFO - Cleaned up temporary initialization directory: /tmp\nemo_init_temp_c42cd161-4797-4462-a744-8511972c2a8d
+2025-06-30 20:51:21,452 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 20:51:21,462 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 20:51:21,470 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 21:06:41,067 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\app.py', reloading
+2025-06-30 21:06:43,557 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 21:06:59,981 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 21:06:59,981 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 21:06:59,981 - nemo_processor - INFO - Created temporary directory for initialization: /tmp\nemo_init_temp_3e5c99bc-378f-490b-9783-a408919cb510
+2025-06-30 21:06:59,996 - nemo_processor - INFO - Created empty dummy WAV file at: /tmp\nemo_init_temp_3e5c99bc-378f-490b-9783-a408919cb510\init_dummy_audio.wav
+2025-06-30 21:06:59,996 - nemo_processor - INFO - Created dummy manifest file at: /tmp\nemo_init_temp_3e5c99bc-378f-490b-9783-a408919cb510\init_dummy_manifest.json
+2025-06-30 21:06:59,998 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 21:07:00,018 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 21:07:00,020 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 21:07:00,020 - nemo_processor - INFO - Assigned temporary manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 21:07:01,793 - nemo_processor - INFO - NeMo components loaded successfully.
+2025-06-30 21:07:01,793 - nemo_processor - INFO - Cleaned up temporary initialization directory: /tmp\nemo_init_temp_3e5c99bc-378f-490b-9783-a408919cb510
+2025-06-30 21:07:01,793 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 21:07:01,819 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 21:07:01,828 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 21:07:03,359 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\app.py', reloading
+2025-06-30 21:07:05,008 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 21:07:22,362 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 21:07:22,362 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 21:07:22,378 - nemo_processor - INFO - Created temporary directory for initialization: /tmp\nemo_init_temp_38e3d658-0eaa-44fb-9cdc-6f003e1ceca7
+2025-06-30 21:07:22,382 - nemo_processor - INFO - Created empty dummy WAV file at: /tmp\nemo_init_temp_38e3d658-0eaa-44fb-9cdc-6f003e1ceca7\init_dummy_audio.wav
+2025-06-30 21:07:22,382 - nemo_processor - INFO - Created dummy manifest file at: /tmp\nemo_init_temp_38e3d658-0eaa-44fb-9cdc-6f003e1ceca7\init_dummy_manifest.json
+2025-06-30 21:07:22,389 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 21:07:22,406 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 21:07:22,406 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 21:07:22,407 - nemo_processor - INFO - Assigned temporary manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 21:07:24,044 - nemo_processor - INFO - NeMo components loaded successfully.
+2025-06-30 21:07:24,044 - nemo_processor - INFO - Cleaned up temporary initialization directory: /tmp\nemo_init_temp_38e3d658-0eaa-44fb-9cdc-6f003e1ceca7
+2025-06-30 21:07:24,044 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 21:07:24,054 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 21:07:24,062 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 21:07:30,768 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\app.py', reloading
+2025-06-30 21:07:32,148 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 21:07:47,587 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 21:07:47,587 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 21:07:47,588 - nemo_processor - INFO - Created temporary directory for initialization: /tmp\nemo_init_temp_aa37c064-3145-4ced-990f-09d3b69275b7
+2025-06-30 21:07:47,597 - nemo_processor - INFO - Created empty dummy WAV file at: /tmp\nemo_init_temp_aa37c064-3145-4ced-990f-09d3b69275b7\init_dummy_audio.wav
+2025-06-30 21:07:47,598 - nemo_processor - INFO - Created dummy manifest file at: /tmp\nemo_init_temp_aa37c064-3145-4ced-990f-09d3b69275b7\init_dummy_manifest.json
+2025-06-30 21:07:47,598 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 21:07:47,614 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 21:07:47,614 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 21:07:47,616 - nemo_processor - INFO - Assigned temporary manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 21:07:49,332 - nemo_processor - INFO - NeMo components loaded successfully.
+2025-06-30 21:07:49,332 - nemo_processor - INFO - Cleaned up temporary initialization directory: /tmp\nemo_init_temp_aa37c064-3145-4ced-990f-09d3b69275b7
+2025-06-30 21:07:49,332 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 21:07:49,353 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 21:07:49,359 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 21:07:50,913 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\app.py', reloading
+2025-06-30 21:07:52,501 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 21:08:22,623 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 21:08:22,624 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 21:08:22,624 - nemo_processor - INFO - Created temporary directory for initialization: /tmp\nemo_init_temp_61b9f8b0-457a-42ad-a1d3-5375427d73f8
+2025-06-30 21:08:22,631 - nemo_processor - INFO - Created empty dummy WAV file at: /tmp\nemo_init_temp_61b9f8b0-457a-42ad-a1d3-5375427d73f8\init_dummy_audio.wav
+2025-06-30 21:08:22,631 - nemo_processor - INFO - Created dummy manifest file at: /tmp\nemo_init_temp_61b9f8b0-457a-42ad-a1d3-5375427d73f8\init_dummy_manifest.json
+2025-06-30 21:08:22,633 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 21:08:22,650 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 21:08:22,650 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 21:08:22,652 - nemo_processor - INFO - Assigned temporary manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 21:08:24,143 - nemo_processor - INFO - NeMo components loaded successfully.
+2025-06-30 21:08:24,144 - nemo_processor - INFO - Cleaned up temporary initialization directory: /tmp\nemo_init_temp_61b9f8b0-457a-42ad-a1d3-5375427d73f8
+2025-06-30 21:08:24,144 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 21:08:25,063 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.24:5000
+2025-06-30 21:08:25,064 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-30 21:08:25,066 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 21:08:38,783 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 21:08:38,783 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 21:08:38,784 - nemo_processor - INFO - Created temporary directory for initialization: /tmp\nemo_init_temp_f77f00ab-d565-4d7d-a60c-28d86225d96e
+2025-06-30 21:08:38,794 - nemo_processor - INFO - Created empty dummy WAV file at: /tmp\nemo_init_temp_f77f00ab-d565-4d7d-a60c-28d86225d96e\init_dummy_audio.wav
+2025-06-30 21:08:38,796 - nemo_processor - INFO - Created dummy manifest file at: /tmp\nemo_init_temp_f77f00ab-d565-4d7d-a60c-28d86225d96e\init_dummy_manifest.json
+2025-06-30 21:08:38,797 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 21:08:38,817 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 21:08:38,818 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 21:08:38,819 - nemo_processor - INFO - Assigned temporary manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 21:08:40,441 - nemo_processor - INFO - NeMo components loaded successfully.
+2025-06-30 21:08:40,441 - nemo_processor - INFO - Cleaned up temporary initialization directory: /tmp\nemo_init_temp_f77f00ab-d565-4d7d-a60c-28d86225d96e
+2025-06-30 21:08:40,441 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 21:08:40,458 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 21:08:40,465 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 22:06:33,951 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\app.py', reloading
+2025-06-30 22:06:37,160 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 22:07:02,768 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 22:07:02,768 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 22:07:02,768 - nemo_processor - INFO - Created temporary directory for initialization: /tmp\nemo_init_temp_ff8e71ac-1b3c-4fc6-b7dc-8a5810b8180b
+2025-06-30 22:07:02,787 - nemo_processor - INFO - Created empty dummy WAV file at: /tmp\nemo_init_temp_ff8e71ac-1b3c-4fc6-b7dc-8a5810b8180b\init_dummy_audio.wav
+2025-06-30 22:07:02,789 - nemo_processor - INFO - Created dummy manifest file at: /tmp\nemo_init_temp_ff8e71ac-1b3c-4fc6-b7dc-8a5810b8180b\init_dummy_manifest.json
+2025-06-30 22:07:02,789 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 22:07:02,801 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 22:07:02,801 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 22:07:02,809 - nemo_processor - INFO - Assigned temporary manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 22:07:04,656 - nemo_processor - INFO - NeMo components loaded successfully.
+2025-06-30 22:07:04,656 - nemo_processor - INFO - Cleaned up temporary initialization directory: /tmp\nemo_init_temp_ff8e71ac-1b3c-4fc6-b7dc-8a5810b8180b
+2025-06-30 22:07:04,671 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-06-30 22:07:05,590 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.24:5000
+2025-06-30 22:07:05,590 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-30 22:07:05,590 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 22:07:20,908 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 22:07:20,909 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 22:07:20,909 - nemo_processor - INFO - Created temporary directory for initialization: /tmp\nemo_init_temp_d49aab1a-fcd7-4f88-ac84-a04e85231d49
+2025-06-30 22:07:20,923 - nemo_processor - INFO - Created empty dummy WAV file at: /tmp\nemo_init_temp_d49aab1a-fcd7-4f88-ac84-a04e85231d49\init_dummy_audio.wav
+2025-06-30 22:07:20,924 - nemo_processor - INFO - Created dummy manifest file at: /tmp\nemo_init_temp_d49aab1a-fcd7-4f88-ac84-a04e85231d49\init_dummy_manifest.json
+2025-06-30 22:07:20,924 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 22:07:20,941 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 22:07:20,941 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 22:07:20,942 - nemo_processor - INFO - Assigned temporary manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 22:07:22,511 - nemo_processor - INFO - NeMo components loaded successfully.
+2025-06-30 22:07:22,511 - nemo_processor - INFO - Cleaned up temporary initialization directory: /tmp\nemo_init_temp_d49aab1a-fcd7-4f88-ac84-a04e85231d49
+2025-06-30 22:07:22,511 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-06-30 22:07:22,519 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 22:07:22,528 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 22:19:02,930 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:19:02] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-30 22:19:08,629 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:19:08] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-30 22:19:13,578 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:19:13] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-30 22:19:20,733 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:19:20] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-30 22:20:29,640 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:20:29] "[31m[1mGET /diarize HTTP/1.1[0m" 405 -
+2025-06-30 22:20:51,761 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:20:51] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-30 22:20:56,848 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:20:56] "[31m[1mGET /diarize HTTP/1.1[0m" 405 -
+2025-06-30 22:20:59,840 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:20:59] "[31m[1mGET /diarize HTTP/1.1[0m" 405 -
+2025-06-30 22:31:31,595 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:31:31] "[33mGET /docs HTTP/1.1[0m" 404 -
+2025-06-30 22:31:38,153 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:31:38] "[32mGET /apidocs HTTP/1.1[0m" 308 -
+2025-06-30 22:31:38,856 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:31:38] "GET /apidocs/ HTTP/1.1" 200 -
+2025-06-30 22:31:39,363 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:31:39] "GET /flasgger_static/swagger-ui.css HTTP/1.1" 200 -
+2025-06-30 22:31:39,492 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:31:39] "GET /flasgger_static/lib/jquery.min.js HTTP/1.1" 200 -
+2025-06-30 22:31:39,569 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:31:39] "GET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2025-06-30 22:31:39,738 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:31:39] "GET /flasgger_static/swagger-ui-bundle.js HTTP/1.1" 200 -
+2025-06-30 22:31:40,000 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:31:40] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-06-30 22:31:40,027 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:31:40] "GET /flasgger_static/favicon-32x32.png HTTP/1.1" 200 -
+2025-06-30 22:32:01,440 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944
+2025-06-30 22:32:01,456 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944\M_0025_11y10m_1.wav
+2025-06-30 22:32:01,526 - audio_utils - INFO - Attempting to convert '/tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944\M_0025_11y10m_1.wav' to WAV at '/tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944\M_0025_11y10m_1.wav' using FFmpeg.
+2025-06-30 22:32:01,797 - audio_utils - ERROR - FFmpeg conversion failed for 'M_0025_11y10m_1.wav'. Command: ffmpeg -i /tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944\M_0025_11y10m_1.wav -ar 16000 -ac 1 -y /tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944\M_0025_11y10m_1.wav
+Stdout: 
+Stderr: ffmpeg version 7.1.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[aist#0:0/pcm_s16le @ 000002361b9cc6c0] Guessed Channel Layout: mono
+Input #0, wav, from '/tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944\M_0025_11y10m_1.wav':
+  Duration: 00:01:57.12, bitrate: 320 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 20000 Hz, mono, s16, 320 kb/s
+Output /tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944\M_0025_11y10m_1.wav same as Input #0 - exiting
+FFmpeg cannot edit existing files in-place.
+Error opening output file /tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944\M_0025_11y10m_1.wav.
+Error opening output files: Invalid argument
+
+2025-06-30 22:32:01,800 - nemo_processor - ERROR - Audio conversion failed for 'M_0025_11y10m_1.wav': Audio conversion failed for 'M_0025_11y10m_1.wav'. Details: ffmpeg version 7.1.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[aist#0:0/pcm_s16le @ 000002361b9cc6c0] Guessed Channel Layout: mono
+Input #0, wav, from '/tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944\M_0025_11y10m_1.wav':
+  Duration: 00:01:57.12, bitrate: 320 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 20000 Hz, mono, s16, 320 kb/s
+Output /tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944\M_0025_11y10m_1.wav same as Input #0 - exiting
+FFmpeg cannot edit existing files in-place.
+Error opening output file /tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944\M_0025_11y10m_1.wav.
+Error opening output files: Invalid argument. Please check if the audio file is valid or if FFmpeg is correctly installed and in PATH.
+2025-06-30 22:32:01,801 - __main__ - ERROR - Processing failed for 'M_0025_11y10m_1.wav': Audio conversion failed for 'M_0025_11y10m_1.wav'. Details: ffmpeg version 7.1.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[aist#0:0/pcm_s16le @ 000002361b9cc6c0] Guessed Channel Layout: mono
+Input #0, wav, from '/tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944\M_0025_11y10m_1.wav':
+  Duration: 00:01:57.12, bitrate: 320 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 20000 Hz, mono, s16, 320 kb/s
+Output /tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944\M_0025_11y10m_1.wav same as Input #0 - exiting
+FFmpeg cannot edit existing files in-place.
+Error opening output file /tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944\M_0025_11y10m_1.wav.
+Error opening output files: Invalid argument. Please check if the audio file is valid or if FFmpeg is correctly installed and in PATH.
+2025-06-30 22:32:01,805 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\676fe9df-653d-4649-b397-047c2f9d2944
+2025-06-30 22:32:01,808 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:32:01] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-06-30 22:46:53,728 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\audio_utils.py', reloading
+2025-06-30 22:46:58,979 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 22:47:23,245 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 22:47:23,247 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 22:47:23,248 - nemo_processor - INFO - Created temporary directory for initialization: /tmp\nemo_init_temp_4dfced30-831d-44d7-86ab-82831513e15f
+2025-06-30 22:47:23,260 - nemo_processor - INFO - Created empty dummy WAV file at: /tmp\nemo_init_temp_4dfced30-831d-44d7-86ab-82831513e15f\init_dummy_audio.wav
+2025-06-30 22:47:23,264 - nemo_processor - INFO - Created dummy manifest file at: /tmp\nemo_init_temp_4dfced30-831d-44d7-86ab-82831513e15f\init_dummy_manifest.json
+2025-06-30 22:47:23,265 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 22:47:23,296 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 22:47:23,297 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 22:47:23,299 - nemo_processor - INFO - Assigned temporary manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 22:47:25,751 - nemo_processor - INFO - NeMo components loaded successfully.
+2025-06-30 22:47:25,752 - nemo_processor - INFO - Cleaned up temporary initialization directory: /tmp\nemo_init_temp_4dfced30-831d-44d7-86ab-82831513e15f
+2025-06-30 22:47:25,753 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-06-30 22:47:25,772 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 22:47:25,780 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 22:48:07,734 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\audio_utils.py', reloading
+2025-06-30 22:48:09,519 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 22:48:31,680 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 22:48:31,681 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 22:48:31,682 - nemo_processor - INFO - Created temporary directory for initialization: /tmp\nemo_init_temp_c94eac6e-bdd5-4779-a4d8-a94daf2c422a
+2025-06-30 22:48:31,700 - nemo_processor - INFO - Created empty dummy WAV file at: /tmp\nemo_init_temp_c94eac6e-bdd5-4779-a4d8-a94daf2c422a\init_dummy_audio.wav
+2025-06-30 22:48:31,704 - nemo_processor - INFO - Created dummy manifest file at: /tmp\nemo_init_temp_c94eac6e-bdd5-4779-a4d8-a94daf2c422a\init_dummy_manifest.json
+2025-06-30 22:48:31,704 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 22:48:31,744 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 22:48:31,744 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 22:48:31,745 - nemo_processor - INFO - Assigned temporary manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 22:48:34,632 - nemo_processor - INFO - NeMo components loaded successfully.
+2025-06-30 22:48:34,635 - nemo_processor - INFO - Cleaned up temporary initialization directory: /tmp\nemo_init_temp_c94eac6e-bdd5-4779-a4d8-a94daf2c422a
+2025-06-30 22:48:34,637 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-06-30 22:48:34,664 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 22:48:34,674 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 22:48:36,303 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\b8306344-22c8-456e-829c-775ba0bad58e
+2025-06-30 22:48:36,320 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\b8306344-22c8-456e-829c-775ba0bad58e\M_0025_11y10m_1.wav
+2025-06-30 22:48:36,373 - audio_utils - INFO - Attempting to convert/resample 'M_0025_11y10m_1.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\b8306344-22c8-456e-829c-775ba0bad58e\converted_input_6f454766-9d04-4765-ada0-7b95d7617a76.wav' using FFmpeg.
+2025-06-30 22:48:36,568 - audio_utils - INFO - FFmpeg conversion successful for 'M_0025_11y10m_1.wav'. Output: 'converted_input_6f454766-9d04-4765-ada0-7b95d7617a76.wav'
+2025-06-30 22:48:36,568 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\b8306344-22c8-456e-829c-775ba0bad58e\diarization_output
+2025-06-30 22:48:36,571 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\b8306344-22c8-456e-829c-775ba0bad58e\audio_manifest.json
+2025-06-30 22:48:36,571 - nemo_processor - INFO - Updated NeMo config with manifest: /tmp/diarization_api_results\b8306344-22c8-456e-829c-775ba0bad58e\audio_manifest.json and out_dir: /tmp/diarization_api_results\b8306344-22c8-456e-829c-775ba0bad58e\diarization_output
+2025-06-30 22:48:36,571 - nemo_processor - INFO - Starting ASR inference for converted_input_6f454766-9d04-4765-ada0-7b95d7617a76.wav using asr_decoder_ts_instance...
+2025-06-30 22:48:36,649 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'M_0025_11y10m_1.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 227, in process_audio
+    word_hyp, word_ts_hyp = asr_decoder_ts_instance.run_ASR(asr_model_instance) # type: ignore
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 453, in run_ASR_QuartzNet_CTC
+    transcript_hyps_list = asr_model.transcribe(
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\models\ctc_models.py", line 182, in transcribe
+    return super().transcribe(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\mixins\transcription.py", line 269, in transcribe
+    for processed_outputs in generator:
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\mixins\transcription.py", line 375, in transcribe_generator
+    for test_batch in tqdm(dataloader, desc="Transcribing", disable=not verbose):
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\tqdm\std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\torch\utils\data\dataloader.py", line 631, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\torch\utils\data\dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\data\audio_to_text.py", line 490, in __getitem__
+    return self._process_sample(index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\data\audio_to_text.py", line 499, in _process_sample
+    features = self.featurizer.process(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\preprocessing\features.py", line 202, in process
+    audio = AudioSegment.from_file(
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\preprocessing\segment.py", line 373, in from_file
+    raise Exception(f"Your audio file {audio_file} could not be decoded. We tried using {libs}.")
+Exception: Your audio file /tmp\nemo_init_temp_c94eac6e-bdd5-4779-a4d8-a94daf2c422a\init_dummy_audio.wav could not be decoded. We tried using soundfile.
+2025-06-30 22:48:36,934 - __main__ - ERROR - Processing failed for 'M_0025_11y10m_1.wav': An unexpected internal server error occurred while processing 'M_0025_11y10m_1.wav'. Please try again or contact support if the issue persists. Details: Your audio file /tmp\nemo_init_temp_c94eac6e-bdd5-4779-a4d8-a94daf2c422a\init_dummy_audio.wav could not be decoded. We tried using soundfile.
+2025-06-30 22:48:36,934 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\b8306344-22c8-456e-829c-775ba0bad58e
+2025-06-30 22:48:36,934 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 22:48:36] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-06-30 23:09:18,063 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-06-30 23:09:22,054 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 23:09:43,173 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 23:09:43,173 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 23:09:43,174 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 23:09:43,200 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 23:09:43,201 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 23:09:43,201 - nemo_processor - INFO - Instantiating temporary ASRDecoderTimeStamps to get global ASR model instance.
+2025-06-30 23:09:43,202 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 73, in load_nemo_components
+    temp_decoder_ts = ASRDecoderTimeStamps(cfg_diarizer=nemo_cfg.diarizer) # type: ignore
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 317, in __init__
+    self.manifest_filepath = cfg_diarizer.manifest_filepath
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\dictconfig.py", line 359, in __getattr__
+    self._format_and_raise(key=key, value=None, cause=e)
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\base.py", line 231, in _format_and_raise
+    format_and_raise(
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\_utils.py", line 899, in format_and_raise
+    _raise(ex, cause)
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\_utils.py", line 797, in _raise
+    raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\dictconfig.py", line 351, in __getattr__
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\dictconfig.py", line 451, in _get_impl
+    return self._resolve_with_default(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\omegaconf\basecontainer.py", line 96, in _resolve_with_default
+    raise MissingMandatoryValue("Missing mandatory value: $FULL_KEY")
+omegaconf.errors.MissingMandatoryValue: Missing mandatory value: diarizer.manifest_filepath
+    full_key: diarizer.manifest_filepath
+    object_type=dict
+2025-06-30 23:11:39,209 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 23:11:39,210 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 23:11:39,211 - nemo_processor - INFO - Created temporary directory for initialization: /tmp\nemo_init_temp_55ca81a1-27a3-4466-8974-f33c59fc8659
+2025-06-30 23:11:39,224 - nemo_processor - INFO - Created empty dummy WAV file at: /tmp\nemo_init_temp_55ca81a1-27a3-4466-8974-f33c59fc8659\init_dummy_audio.wav
+2025-06-30 23:11:39,226 - nemo_processor - INFO - Created dummy manifest file at: /tmp\nemo_init_temp_55ca81a1-27a3-4466-8974-f33c59fc8659\init_dummy_manifest.json
+2025-06-30 23:11:39,228 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 23:11:39,264 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 23:11:39,265 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 23:11:39,267 - nemo_processor - INFO - Assigned temporary manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 23:11:42,084 - nemo_processor - INFO - NeMo components loaded successfully.
+2025-06-30 23:11:42,088 - nemo_processor - INFO - Cleaned up temporary initialization directory: /tmp\nemo_init_temp_55ca81a1-27a3-4466-8974-f33c59fc8659
+2025-06-30 23:11:42,089 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 23:11:43,017 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.24:5000
+2025-06-30 23:11:43,017 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-30 23:11:43,021 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 23:12:02,528 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 23:12:02,530 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 23:12:02,530 - nemo_processor - INFO - Created temporary directory for initialization: /tmp\nemo_init_temp_9f9498eb-a2af-4025-ae8d-218edb861889
+2025-06-30 23:12:02,542 - nemo_processor - INFO - Created empty dummy WAV file at: /tmp\nemo_init_temp_9f9498eb-a2af-4025-ae8d-218edb861889\init_dummy_audio.wav
+2025-06-30 23:12:02,543 - nemo_processor - INFO - Created dummy manifest file at: /tmp\nemo_init_temp_9f9498eb-a2af-4025-ae8d-218edb861889\init_dummy_manifest.json
+2025-06-30 23:12:02,545 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 23:12:02,570 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 23:12:02,570 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 23:12:02,577 - nemo_processor - INFO - Assigned temporary manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 23:12:05,053 - nemo_processor - INFO - NeMo components loaded successfully.
+2025-06-30 23:12:05,055 - nemo_processor - INFO - Cleaned up temporary initialization directory: /tmp\nemo_init_temp_9f9498eb-a2af-4025-ae8d-218edb861889
+2025-06-30 23:12:05,056 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 23:12:05,072 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 23:12:05,082 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 23:12:41,816 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\app.py', reloading
+2025-06-30 23:12:44,999 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 23:13:16,897 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 23:13:16,898 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 23:13:16,899 - nemo_processor - INFO - Created temporary directory for initialization: /tmp\nemo_init_temp_0349e47d-4ff7-43c3-81e3-4564d4d5bbd0
+2025-06-30 23:13:16,910 - nemo_processor - INFO - Created empty dummy WAV file at: /tmp\nemo_init_temp_0349e47d-4ff7-43c3-81e3-4564d4d5bbd0\init_dummy_audio.wav
+2025-06-30 23:13:16,912 - nemo_processor - INFO - Created dummy manifest file at: /tmp\nemo_init_temp_0349e47d-4ff7-43c3-81e3-4564d4d5bbd0\init_dummy_manifest.json
+2025-06-30 23:13:16,913 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 23:13:16,951 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 23:13:16,951 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 23:13:16,953 - nemo_processor - INFO - Assigned temporary manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 23:13:19,505 - nemo_processor - INFO - NeMo components loaded successfully.
+2025-06-30 23:13:19,507 - nemo_processor - INFO - Cleaned up temporary initialization directory: /tmp\nemo_init_temp_0349e47d-4ff7-43c3-81e3-4564d4d5bbd0
+2025-06-30 23:13:19,508 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-06-30 23:13:20,427 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.24:5000
+2025-06-30 23:13:20,428 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-30 23:13:20,432 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 23:13:37,965 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 23:13:37,965 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 23:13:37,966 - nemo_processor - INFO - Created temporary directory for initialization: /tmp\nemo_init_temp_d88cc62f-a5c1-4ca3-aa4d-e3aaa8471288
+2025-06-30 23:13:37,977 - nemo_processor - INFO - Created empty dummy WAV file at: /tmp\nemo_init_temp_d88cc62f-a5c1-4ca3-aa4d-e3aaa8471288\init_dummy_audio.wav
+2025-06-30 23:13:37,980 - nemo_processor - INFO - Created dummy manifest file at: /tmp\nemo_init_temp_d88cc62f-a5c1-4ca3-aa4d-e3aaa8471288\init_dummy_manifest.json
+2025-06-30 23:13:38,010 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 23:13:38,052 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 23:13:38,055 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 23:13:38,058 - nemo_processor - INFO - Assigned temporary manifest_filepath and out_dir for NeMo component initialization.
+2025-06-30 23:13:40,066 - nemo_processor - INFO - NeMo components loaded successfully.
+2025-06-30 23:13:40,067 - nemo_processor - INFO - Cleaned up temporary initialization directory: /tmp\nemo_init_temp_d88cc62f-a5c1-4ca3-aa4d-e3aaa8471288
+2025-06-30 23:13:40,067 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-06-30 23:13:40,080 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 23:13:40,086 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 23:13:41,259 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:13:41] "GET /apidocs/ HTTP/1.1" 200 -
+2025-06-30 23:13:41,501 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:13:41] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2025-06-30 23:13:41,507 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:13:41] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-06-30 23:13:41,516 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:13:41] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-06-30 23:13:41,521 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:13:41] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-06-30 23:13:41,577 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:13:41] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-06-30 23:13:41,583 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:13:41] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2025-06-30 23:13:55,609 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\d739a3c8-f76d-4745-9a27-f51d1ac44180
+2025-06-30 23:13:55,624 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\d739a3c8-f76d-4745-9a27-f51d1ac44180\M_0025_11y10m_1.wav
+2025-06-30 23:13:55,643 - audio_utils - INFO - Attempting to convert/resample 'M_0025_11y10m_1.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\d739a3c8-f76d-4745-9a27-f51d1ac44180\converted_input_033d2eab-1d6e-4083-9207-84a4ac7e572f.wav' using FFmpeg.
+2025-06-30 23:13:55,819 - audio_utils - INFO - FFmpeg conversion successful for 'M_0025_11y10m_1.wav'. Output: 'converted_input_033d2eab-1d6e-4083-9207-84a4ac7e572f.wav'
+2025-06-30 23:13:55,820 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\d739a3c8-f76d-4745-9a27-f51d1ac44180\diarization_output
+2025-06-30 23:13:55,822 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\d739a3c8-f76d-4745-9a27-f51d1ac44180\audio_manifest.json
+2025-06-30 23:13:55,823 - nemo_processor - INFO - Updated NeMo config with manifest: /tmp/diarization_api_results\d739a3c8-f76d-4745-9a27-f51d1ac44180\audio_manifest.json and out_dir: /tmp/diarization_api_results\d739a3c8-f76d-4745-9a27-f51d1ac44180\diarization_output
+2025-06-30 23:13:55,824 - nemo_processor - INFO - Starting ASR inference for converted_input_033d2eab-1d6e-4083-9207-84a4ac7e572f.wav using asr_decoder_ts_instance...
+2025-06-30 23:13:55,921 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'M_0025_11y10m_1.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 227, in process_audio
+    word_hyp, word_ts_hyp = asr_decoder_ts_instance.run_ASR(asr_model_instance) # type: ignore
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 453, in run_ASR_QuartzNet_CTC
+    transcript_hyps_list = asr_model.transcribe(
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\models\ctc_models.py", line 182, in transcribe
+    return super().transcribe(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\mixins\transcription.py", line 269, in transcribe
+    for processed_outputs in generator:
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\mixins\transcription.py", line 375, in transcribe_generator
+    for test_batch in tqdm(dataloader, desc="Transcribing", disable=not verbose):
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\tqdm\std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\torch\utils\data\dataloader.py", line 631, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\torch\utils\data\dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\data\audio_to_text.py", line 490, in __getitem__
+    return self._process_sample(index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\data\audio_to_text.py", line 499, in _process_sample
+    features = self.featurizer.process(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\preprocessing\features.py", line 202, in process
+    audio = AudioSegment.from_file(
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\preprocessing\segment.py", line 373, in from_file
+    raise Exception(f"Your audio file {audio_file} could not be decoded. We tried using {libs}.")
+Exception: Your audio file /tmp\nemo_init_temp_d88cc62f-a5c1-4ca3-aa4d-e3aaa8471288\init_dummy_audio.wav could not be decoded. We tried using soundfile.
+2025-06-30 23:13:55,938 - __main__ - ERROR - Processing failed for 'M_0025_11y10m_1.wav': An unexpected internal server error occurred while processing 'M_0025_11y10m_1.wav'. Please try again or contact support if the issue persists. Details: Your audio file /tmp\nemo_init_temp_d88cc62f-a5c1-4ca3-aa4d-e3aaa8471288\init_dummy_audio.wav could not be decoded. We tried using soundfile.
+2025-06-30 23:13:55,941 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\d739a3c8-f76d-4745-9a27-f51d1ac44180
+2025-06-30 23:13:55,944 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:13:55] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-06-30 23:41:03,939 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-06-30 23:41:08,316 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 23:41:29,879 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 23:41:29,879 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 23:41:29,880 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 23:41:29,900 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 23:41:29,901 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 23:41:29,903 - nemo_processor - INFO - Instantiating temporary ASRDecoderTimeStamps to get global ASR model instance.
+2025-06-30 23:41:29,904 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 88, in load_nemo_components
+    temp_decoder_ts = ASRDecoderTimeStamps(cfg_diarizer=nemo_cfg.diarizer) # type: ignore
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 325, in __init__
+    self.AUDIO_RTTM_MAP = audio_rttm_map(self.manifest_filepath)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\speaker_utils.py", line 90, in audio_rttm_map
+    with open(manifest, 'r') as inp_file:
+         ^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: ''
+2025-06-30 23:41:29,909 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 23:41:29,928 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 23:41:29,936 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 23:44:41,565 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-06-30 23:44:43,472 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 23:45:12,428 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 23:45:12,428 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 23:45:12,429 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 23:45:12,461 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 23:45:12,461 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 23:45:12,462 - nemo_processor - INFO - Instantiating temporary ASRDecoderTimeStamps to get global ASR model instance.
+2025-06-30 23:45:12,463 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 88, in load_nemo_components
+    temp_decoder_ts = ASRDecoderTimeStamps(cfg_diarizer=nemo_cfg.diarizer) # type: ignore
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 325, in __init__
+    self.AUDIO_RTTM_MAP = audio_rttm_map(self.manifest_filepath)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\speaker_utils.py", line 90, in audio_rttm_map
+    with open(manifest, 'r') as inp_file:
+         ^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: ''
+2025-06-30 23:45:12,467 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 23:45:13,513 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.24:5000
+2025-06-30 23:45:13,514 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-30 23:45:13,517 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 23:45:26,932 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 23:45:26,933 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 23:45:26,933 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 23:45:26,958 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 23:45:26,958 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 23:45:26,959 - nemo_processor - INFO - Instantiating temporary ASRDecoderTimeStamps to get global ASR model instance.
+2025-06-30 23:45:26,959 - nemo_processor - ERROR - Failed to load NeMo components during initialization.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 88, in load_nemo_components
+    temp_decoder_ts = ASRDecoderTimeStamps(cfg_diarizer=nemo_cfg.diarizer) # type: ignore
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 325, in __init__
+    self.AUDIO_RTTM_MAP = audio_rttm_map(self.manifest_filepath)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\speaker_utils.py", line 90, in audio_rttm_map
+    with open(manifest, 'r') as inp_file:
+         ^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: ''
+2025-06-30 23:45:26,962 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-06-30 23:45:26,970 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 23:45:26,977 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 23:48:48,022 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-06-30 23:48:49,635 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 23:49:18,520 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 23:49:18,520 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 23:49:18,521 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 23:49:18,543 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 23:49:18,544 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 23:49:18,545 - nemo_processor - INFO - Instantiating global ASR model instance directly.
+2025-06-30 23:49:20,514 - nemo_processor - INFO - NeMo core ASR model loaded successfully.
+2025-06-30 23:49:20,514 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-06-30 23:49:21,567 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.24:5000
+2025-06-30 23:49:21,568 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-30 23:49:21,569 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 23:49:36,391 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 23:49:36,392 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 23:49:36,392 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 23:49:36,415 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 23:49:36,416 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 23:49:36,418 - nemo_processor - INFO - Instantiating global ASR model instance directly.
+2025-06-30 23:49:38,609 - nemo_processor - INFO - NeMo core ASR model loaded successfully.
+2025-06-30 23:49:38,609 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-06-30 23:49:38,623 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 23:49:38,631 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 23:49:59,338 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\f7f55d12-28bb-47f2-8eb4-57b504fcf27a
+2025-06-30 23:49:59,359 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\f7f55d12-28bb-47f2-8eb4-57b504fcf27a\M_0025_11y10m_1.wav
+2025-06-30 23:49:59,359 - audio_utils - INFO - Attempting to convert/resample 'M_0025_11y10m_1.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\f7f55d12-28bb-47f2-8eb4-57b504fcf27a\converted_input_5a1f1196-1836-4b6b-9d05-8393c68f3624.wav' using FFmpeg.
+2025-06-30 23:49:59,553 - audio_utils - INFO - FFmpeg conversion successful for 'M_0025_11y10m_1.wav'. Output: 'converted_input_5a1f1196-1836-4b6b-9d05-8393c68f3624.wav'
+2025-06-30 23:49:59,553 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\f7f55d12-28bb-47f2-8eb4-57b504fcf27a\diarization_output
+2025-06-30 23:49:59,558 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\f7f55d12-28bb-47f2-8eb4-57b504fcf27a\audio_manifest.json
+2025-06-30 23:49:59,560 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'M_0025_11y10m_1.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 156, in process_audio
+    request_cfg = OmegaConf.copy(nemo_cfg) # type: ignore [attr-defined]
+                  ^^^^^^^^^^^^^^
+AttributeError: type object 'OmegaConf' has no attribute 'copy'
+2025-06-30 23:49:59,572 - __main__ - ERROR - Processing failed for 'M_0025_11y10m_1.wav': An unexpected internal server error occurred while processing 'M_0025_11y10m_1.wav'. Please try again or contact support if the issue persists. Details: type object 'OmegaConf' has no attribute 'copy'
+2025-06-30 23:49:59,578 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\f7f55d12-28bb-47f2-8eb4-57b504fcf27a
+2025-06-30 23:49:59,589 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:49:59] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-06-30 23:54:38,081 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-06-30 23:54:41,368 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 23:55:06,787 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 23:55:06,787 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 23:55:06,787 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 23:55:06,817 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 23:55:06,818 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 23:55:06,819 - nemo_processor - INFO - Instantiating global ASR model instance directly.
+2025-06-30 23:55:09,324 - nemo_processor - INFO - NeMo core ASR model loaded successfully.
+2025-06-30 23:55:09,325 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-06-30 23:55:10,274 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.24:5000
+2025-06-30 23:55:10,275 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-30 23:55:10,278 - werkzeug - INFO -  * Restarting with stat
+2025-06-30 23:55:23,288 - __main__ - INFO - Starting NeMo component loading process...
+2025-06-30 23:55:23,288 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-06-30 23:55:23,288 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-06-30 23:55:23,314 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-06-30 23:55:23,314 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-06-30 23:55:23,317 - nemo_processor - INFO - Instantiating global ASR model instance directly.
+2025-06-30 23:55:25,083 - nemo_processor - INFO - NeMo core ASR model loaded successfully.
+2025-06-30 23:55:25,083 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-06-30 23:55:25,095 - werkzeug - WARNING -  * Debugger is active!
+2025-06-30 23:55:25,103 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-06-30 23:56:58,977 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:56:58] "GET /apidocs/ HTTP/1.1" 200 -
+2025-06-30 23:56:59,252 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:56:59] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2025-06-30 23:56:59,263 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:56:59] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-06-30 23:56:59,280 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:56:59] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-06-30 23:56:59,285 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:56:59] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-06-30 23:56:59,501 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:56:59] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-06-30 23:56:59,509 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:56:59] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2025-06-30 23:57:20,860 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\def00be1-9451-48c7-8efc-f775749a48b7
+2025-06-30 23:57:20,877 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\def00be1-9451-48c7-8efc-f775749a48b7\M_0078_16y4m_1.wav
+2025-06-30 23:57:20,880 - audio_utils - INFO - Attempting to convert/resample 'M_0078_16y4m_1.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\def00be1-9451-48c7-8efc-f775749a48b7\converted_input_8044089f-5f5a-4eaf-aa03-c4b715336061.wav' using FFmpeg.
+2025-06-30 23:57:21,182 - audio_utils - INFO - FFmpeg conversion successful for 'M_0078_16y4m_1.wav'. Output: 'converted_input_8044089f-5f5a-4eaf-aa03-c4b715336061.wav'
+2025-06-30 23:57:21,184 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\def00be1-9451-48c7-8efc-f775749a48b7\diarization_output
+2025-06-30 23:57:21,186 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\def00be1-9451-48c7-8efc-f775749a48b7\audio_manifest.json
+2025-06-30 23:57:21,196 - nemo_processor - INFO - Updated request-specific NeMo config with manifest: /tmp/diarization_api_results\def00be1-9451-48c7-8efc-f775749a48b7\audio_manifest.json and out_dir: /tmp/diarization_api_results\def00be1-9451-48c7-8efc-f775749a48b7\diarization_output
+2025-06-30 23:57:21,238 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'M_0078_16y4m_1.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 169, in process_audio
+    asr_diar_offline_instance.word_ts_anchor_offset = asr_decoder_ts_instance.word_ts_anchor_offset
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ASRDecoderTimeStamps' object has no attribute 'word_ts_anchor_offset'
+2025-06-30 23:57:21,240 - __main__ - ERROR - Processing failed for 'M_0078_16y4m_1.wav': An unexpected internal server error occurred while processing 'M_0078_16y4m_1.wav'. Please try again or contact support if the issue persists. Details: 'ASRDecoderTimeStamps' object has no attribute 'word_ts_anchor_offset'
+2025-06-30 23:57:21,246 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\def00be1-9451-48c7-8efc-f775749a48b7
+2025-06-30 23:57:21,251 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:57:21] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-06-30 23:57:32,671 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\327986d7-761a-49a7-9669-f0c6a35513aa
+2025-06-30 23:57:32,688 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\327986d7-761a-49a7-9669-f0c6a35513aa\M_0078_16y4m_1.wav
+2025-06-30 23:57:32,689 - audio_utils - INFO - Attempting to convert/resample 'M_0078_16y4m_1.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\327986d7-761a-49a7-9669-f0c6a35513aa\converted_input_80956d27-ea83-4fe2-8189-a1d167ace163.wav' using FFmpeg.
+2025-06-30 23:57:32,843 - audio_utils - INFO - FFmpeg conversion successful for 'M_0078_16y4m_1.wav'. Output: 'converted_input_80956d27-ea83-4fe2-8189-a1d167ace163.wav'
+2025-06-30 23:57:32,845 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\327986d7-761a-49a7-9669-f0c6a35513aa\diarization_output
+2025-06-30 23:57:32,847 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\327986d7-761a-49a7-9669-f0c6a35513aa\audio_manifest.json
+2025-06-30 23:57:32,853 - nemo_processor - INFO - Updated request-specific NeMo config with manifest: /tmp/diarization_api_results\327986d7-761a-49a7-9669-f0c6a35513aa\audio_manifest.json and out_dir: /tmp/diarization_api_results\327986d7-761a-49a7-9669-f0c6a35513aa\diarization_output
+2025-06-30 23:57:32,879 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'M_0078_16y4m_1.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 169, in process_audio
+    asr_diar_offline_instance.word_ts_anchor_offset = asr_decoder_ts_instance.word_ts_anchor_offset
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ASRDecoderTimeStamps' object has no attribute 'word_ts_anchor_offset'
+2025-06-30 23:57:32,880 - __main__ - ERROR - Processing failed for 'M_0078_16y4m_1.wav': An unexpected internal server error occurred while processing 'M_0078_16y4m_1.wav'. Please try again or contact support if the issue persists. Details: 'ASRDecoderTimeStamps' object has no attribute 'word_ts_anchor_offset'
+2025-06-30 23:57:32,886 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\327986d7-761a-49a7-9669-f0c6a35513aa
+2025-06-30 23:57:32,888 - werkzeug - INFO - 127.0.0.1 - - [30/Jun/2025 23:57:32] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-07-01 00:01:20,421 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-07-01 00:01:22,214 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 00:01:55,681 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 00:01:55,681 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-07-01 00:01:55,682 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 00:01:55,711 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 00:01:55,712 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 00:01:55,714 - nemo_processor - INFO - Instantiating global ASR model instance directly.
+2025-07-01 00:01:58,161 - nemo_processor - INFO - NeMo core ASR model loaded successfully.
+2025-07-01 00:01:58,161 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 00:01:59,038 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.24:5000
+2025-07-01 00:01:59,038 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-01 00:01:59,047 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 00:02:11,942 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 00:02:11,943 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-07-01 00:02:11,943 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 00:02:11,960 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 00:02:11,962 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 00:02:11,962 - nemo_processor - INFO - Instantiating global ASR model instance directly.
+2025-07-01 00:02:13,739 - nemo_processor - INFO - NeMo core ASR model loaded successfully.
+2025-07-01 00:02:13,739 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 00:02:13,748 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 00:02:13,757 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 00:07:38,923 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\a0404540-8dc4-4639-838d-e7bf5816cc30
+2025-07-01 00:07:39,190 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\a0404540-8dc4-4639-838d-e7bf5816cc30\output.wav
+2025-07-01 00:07:39,234 - audio_utils - INFO - Attempting to convert/resample 'output.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\a0404540-8dc4-4639-838d-e7bf5816cc30\converted_input_58ad9dca-ac5a-4718-8629-fb47beba0d43.wav' using FFmpeg.
+2025-07-01 00:07:39,829 - audio_utils - INFO - FFmpeg conversion successful for 'output.wav'. Output: 'converted_input_58ad9dca-ac5a-4718-8629-fb47beba0d43.wav'
+2025-07-01 00:07:39,831 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\a0404540-8dc4-4639-838d-e7bf5816cc30\diarization_output
+2025-07-01 00:07:39,833 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\a0404540-8dc4-4639-838d-e7bf5816cc30\audio_manifest.json
+2025-07-01 00:07:39,838 - nemo_processor - INFO - Updated request-specific NeMo config with manifest: /tmp/diarization_api_results\a0404540-8dc4-4639-838d-e7bf5816cc30\audio_manifest.json and out_dir: /tmp/diarization_api_results\a0404540-8dc4-4639-838d-e7bf5816cc30\diarization_output
+2025-07-01 00:07:39,873 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'output.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 174, in process_audio
+    asr_diar_offline_instance.word_ts_anchor_offset = asr_decoder_ts_instance.word_ts_anchor_offset
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ASRDecoderTimeStamps' object has no attribute 'word_ts_anchor_offset'
+2025-07-01 00:07:39,875 - __main__ - ERROR - Processing failed for 'output.wav': An unexpected internal server error occurred while processing 'output.wav'. Please try again or contact support if the issue persists. Details: 'ASRDecoderTimeStamps' object has no attribute 'word_ts_anchor_offset'
+2025-07-01 00:07:39,890 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\a0404540-8dc4-4639-838d-e7bf5816cc30
+2025-07-01 00:07:39,904 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:07:39] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-07-01 00:08:57,505 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-07-01 00:08:59,259 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 00:10:39,649 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 00:10:39,649 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-07-01 00:10:39,649 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 00:10:39,674 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 00:10:39,674 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 00:10:39,675 - nemo_processor - INFO - Instantiating global ASR model instance directly.
+2025-07-01 00:10:41,448 - nemo_processor - INFO - NeMo core ASR model loaded successfully.
+2025-07-01 00:10:41,448 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 00:10:42,406 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.24:5000
+2025-07-01 00:10:42,407 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-01 00:10:42,419 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 00:10:56,537 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 00:10:56,537 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-07-01 00:10:56,537 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 00:10:56,555 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 00:10:56,555 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 00:10:56,555 - nemo_processor - INFO - Instantiating global ASR model instance directly.
+2025-07-01 00:10:58,189 - nemo_processor - INFO - NeMo core ASR model loaded successfully.
+2025-07-01 00:10:58,189 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 00:10:58,200 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 00:10:58,207 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 00:11:23,241 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\6722ea3a-f813-4ec0-9967-471d9b6e5ae4
+2025-07-01 00:11:23,371 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\6722ea3a-f813-4ec0-9967-471d9b6e5ae4\output.wav
+2025-07-01 00:11:23,375 - audio_utils - INFO - Attempting to convert/resample 'output.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\6722ea3a-f813-4ec0-9967-471d9b6e5ae4\converted_input_ed82d485-e997-4088-93a8-6361b23207bf.wav' using FFmpeg.
+2025-07-01 00:11:23,733 - audio_utils - INFO - FFmpeg conversion successful for 'output.wav'. Output: 'converted_input_ed82d485-e997-4088-93a8-6361b23207bf.wav'
+2025-07-01 00:11:23,734 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\6722ea3a-f813-4ec0-9967-471d9b6e5ae4\diarization_output
+2025-07-01 00:11:23,735 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\6722ea3a-f813-4ec0-9967-471d9b6e5ae4\audio_manifest.json
+2025-07-01 00:11:23,749 - nemo_processor - INFO - Updated request-specific NeMo config with manifest: /tmp/diarization_api_results\6722ea3a-f813-4ec0-9967-471d9b6e5ae4\audio_manifest.json and out_dir: /tmp/diarization_api_results\6722ea3a-f813-4ec0-9967-471d9b6e5ae4\diarization_output
+2025-07-01 00:11:23,773 - nemo_processor - INFO - Starting ASR inference for converted_input_ed82d485-e997-4088-93a8-6361b23207bf.wav using asr_decoder_ts_instance...
+2025-07-01 00:11:23,774 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'output.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 173, in process_audio
+    word_hyp, word_ts_hyp = asr_decoder_ts_instance.run_ASR(asr_model_instance) # type: ignore
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not callable
+2025-07-01 00:11:23,780 - __main__ - ERROR - Processing failed for 'output.wav': An unexpected internal server error occurred while processing 'output.wav'. Please try again or contact support if the issue persists. Details: 'NoneType' object is not callable
+2025-07-01 00:11:23,792 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\6722ea3a-f813-4ec0-9967-471d9b6e5ae4
+2025-07-01 00:11:23,804 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:11:23] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-07-01 00:12:49,125 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-07-01 00:12:51,081 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 00:13:05,847 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 00:13:05,847 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-07-01 00:13:05,847 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 00:13:05,869 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 00:13:05,869 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 00:13:05,873 - nemo_processor - INFO - Instantiating global ASR model instance directly.
+2025-07-01 00:13:07,380 - nemo_processor - INFO - NeMo core ASR model loaded successfully.
+2025-07-01 00:13:07,380 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 00:13:07,384 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 00:13:07,398 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 00:21:00,925 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\app.py', reloading
+2025-07-01 00:21:02,356 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 00:21:16,367 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 00:21:16,367 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-07-01 00:21:16,367 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 00:21:16,382 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 00:21:16,383 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 00:21:16,384 - nemo_processor - INFO - Instantiating global ASR model instance directly.
+2025-07-01 00:21:17,904 - nemo_processor - INFO - NeMo core ASR model loaded successfully.
+2025-07-01 00:21:17,905 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 00:21:17,915 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 00:21:17,922 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 00:21:20,376 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:21:20] "GET /apidocs/ HTTP/1.1" 200 -
+2025-07-01 00:21:20,644 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:21:20] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-07-01 00:21:20,699 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:21:20] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2025-07-01 00:21:20,740 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:21:20] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-07-01 00:21:20,893 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:21:20] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-07-01 00:21:21,053 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:21:21] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-07-01 00:21:21,066 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:21:21] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2025-07-01 00:21:37,920 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\36942fe2-c0e3-464e-8dc2-05987d302799
+2025-07-01 00:21:38,040 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\36942fe2-c0e3-464e-8dc2-05987d302799\output.wav
+2025-07-01 00:21:38,042 - audio_utils - INFO - Attempting to convert/resample 'output.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\36942fe2-c0e3-464e-8dc2-05987d302799\converted_input_a2d3b3ea-7aa7-4486-ae54-72c7abc4149e.wav' using FFmpeg.
+2025-07-01 00:21:38,358 - audio_utils - INFO - FFmpeg conversion successful for 'output.wav'. Output: 'converted_input_a2d3b3ea-7aa7-4486-ae54-72c7abc4149e.wav'
+2025-07-01 00:21:38,359 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\36942fe2-c0e3-464e-8dc2-05987d302799\diarization_output
+2025-07-01 00:21:38,360 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\36942fe2-c0e3-464e-8dc2-05987d302799\audio_manifest.json
+2025-07-01 00:21:38,365 - nemo_processor - INFO - Updated request-specific NeMo config with manifest: /tmp/diarization_api_results\36942fe2-c0e3-464e-8dc2-05987d302799\audio_manifest.json and out_dir: /tmp/diarization_api_results\36942fe2-c0e3-464e-8dc2-05987d302799\diarization_output
+2025-07-01 00:21:38,377 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'output.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 171, in process_audio
+    asr_decoder_ts_instance.set_asr_model(asr_model_instance) # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ASRDecoderTimeStamps.set_asr_model() takes 1 positional argument but 2 were given
+2025-07-01 00:21:38,378 - __main__ - ERROR - Processing failed for 'output.wav': An unexpected internal server error occurred while processing 'output.wav'. Please try again or contact support if the issue persists. Details: ASRDecoderTimeStamps.set_asr_model() takes 1 positional argument but 2 were given
+2025-07-01 00:21:38,390 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\36942fe2-c0e3-464e-8dc2-05987d302799
+2025-07-01 00:21:38,399 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:21:38] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-07-01 00:22:43,594 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-07-01 00:22:44,936 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 00:22:59,165 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 00:22:59,165 - nemo_processor - INFO - Attempting to load NeMo components...
+2025-07-01 00:22:59,170 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 00:22:59,179 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 00:22:59,179 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 00:22:59,187 - nemo_processor - INFO - Instantiating global ASR model instance directly.
+2025-07-01 00:23:00,877 - nemo_processor - INFO - NeMo core ASR model loaded successfully.
+2025-07-01 00:23:00,878 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 00:23:00,888 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 00:23:00,893 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 00:23:07,419 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\617836f2-08e0-4de5-a50a-7fbaac664bde
+2025-07-01 00:23:07,527 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\617836f2-08e0-4de5-a50a-7fbaac664bde\output.wav
+2025-07-01 00:23:07,529 - audio_utils - INFO - Attempting to convert/resample 'output.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\617836f2-08e0-4de5-a50a-7fbaac664bde\converted_input_b692fb91-1b24-4a28-8032-89335984028b.wav' using FFmpeg.
+2025-07-01 00:23:07,867 - audio_utils - INFO - FFmpeg conversion successful for 'output.wav'. Output: 'converted_input_b692fb91-1b24-4a28-8032-89335984028b.wav'
+2025-07-01 00:23:07,868 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\617836f2-08e0-4de5-a50a-7fbaac664bde\diarization_output
+2025-07-01 00:23:07,869 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\617836f2-08e0-4de5-a50a-7fbaac664bde\audio_manifest.json
+2025-07-01 00:23:07,875 - nemo_processor - INFO - Updated request-specific NeMo config with manifest: /tmp/diarization_api_results\617836f2-08e0-4de5-a50a-7fbaac664bde\audio_manifest.json and out_dir: /tmp/diarization_api_results\617836f2-08e0-4de5-a50a-7fbaac664bde\diarization_output
+2025-07-01 00:23:07,895 - nemo_processor - INFO - Starting ASR inference for converted_input_b692fb91-1b24-4a28-8032-89335984028b.wav using asr_decoder_ts_instance...
+2025-07-01 00:23:07,896 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'output.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 169, in process_audio
+    word_hyp, word_ts_hyp = asr_decoder_ts_instance.run_ASR(asr_model_instance) # type: ignore
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not callable
+2025-07-01 00:23:07,897 - __main__ - ERROR - Processing failed for 'output.wav': An unexpected internal server error occurred while processing 'output.wav'. Please try again or contact support if the issue persists. Details: 'NoneType' object is not callable
+2025-07-01 00:23:07,909 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\617836f2-08e0-4de5-a50a-7fbaac664bde
+2025-07-01 00:23:07,918 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:23:07] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-07-01 00:24:40,041 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-07-01 00:24:41,393 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 00:24:42,341 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 00:25:06,660 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 00:25:06,660 - nemo_processor - INFO - Attempting to load NeMo components (configuration only)...
+2025-07-01 00:25:06,660 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 00:25:06,676 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 00:25:06,676 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 00:25:06,676 - nemo_processor - INFO - NeMo core ASR model loading delegated to per-request ASRDecoderTimeStamps.
+2025-07-01 00:25:06,676 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-07-01 00:25:07,578 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.24:5000
+2025-07-01 00:25:07,580 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-01 00:25:07,584 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 00:25:16,913 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 00:25:16,914 - nemo_processor - INFO - Attempting to load NeMo components (configuration only)...
+2025-07-01 00:25:16,914 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 00:25:16,931 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 00:25:16,931 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 00:25:16,932 - nemo_processor - INFO - NeMo core ASR model loading delegated to per-request ASRDecoderTimeStamps.
+2025-07-01 00:25:16,933 - __main__ - ERROR - Failed to load NeMo components at application startup. API will be unavailable.
+2025-07-01 00:25:16,941 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 00:25:16,945 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 00:25:27,669 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:25:27] "GET /apidocs/ HTTP/1.1" 200 -
+2025-07-01 00:25:27,848 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:25:27] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2025-07-01 00:25:27,850 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:25:27] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-07-01 00:25:27,864 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:25:27] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-07-01 00:25:27,865 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:25:27] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-07-01 00:25:27,981 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:25:27] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-07-01 00:25:27,990 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:25:27] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2025-07-01 00:25:40,798 - __main__ - ERROR - Request received but NeMo core components are not loaded. Returning 503.
+2025-07-01 00:25:40,800 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:25:40] "[35m[1mPOST /diarize HTTP/1.1[0m" 503 -
+2025-07-01 00:44:53,664 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\app.py', reloading
+2025-07-01 00:44:56,871 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 00:45:12,572 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 00:45:12,572 - nemo_processor - INFO - Attempting to load NeMo components (configuration only)...
+2025-07-01 00:45:12,572 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 00:45:12,592 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 00:45:12,592 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 00:45:12,593 - nemo_processor - INFO - NeMo core ASR model loading delegated to per-request ASRDecoderTimeStamps.
+2025-07-01 00:45:12,593 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 00:45:12,607 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 00:45:12,607 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 00:45:16,467 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:45:16] "GET /apidocs/ HTTP/1.1" 200 -
+2025-07-01 00:45:16,667 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:45:16] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-07-01 00:45:16,677 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:45:16] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-07-01 00:45:16,685 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:45:16] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-07-01 00:45:16,691 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:45:16] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2025-07-01 00:45:16,820 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:45:16] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-07-01 00:45:16,824 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:45:16] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2025-07-01 00:45:29,309 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\9c9d9797-df27-4af2-ac40-b0dba5f50429
+2025-07-01 00:45:29,332 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\9c9d9797-df27-4af2-ac40-b0dba5f50429\M_0078_16y4m_1.wav
+2025-07-01 00:45:29,333 - audio_utils - INFO - Attempting to convert/resample 'M_0078_16y4m_1.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\9c9d9797-df27-4af2-ac40-b0dba5f50429\converted_input_0073ab4e-b7a0-4440-ac32-09d0cafb0c09.wav' using FFmpeg.
+2025-07-01 00:45:29,545 - audio_utils - INFO - FFmpeg conversion successful for 'M_0078_16y4m_1.wav'. Output: 'converted_input_0073ab4e-b7a0-4440-ac32-09d0cafb0c09.wav'
+2025-07-01 00:45:29,546 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\9c9d9797-df27-4af2-ac40-b0dba5f50429\diarization_output
+2025-07-01 00:45:29,547 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\9c9d9797-df27-4af2-ac40-b0dba5f50429\audio_manifest.json
+2025-07-01 00:45:29,552 - nemo_processor - INFO - Updated request-specific NeMo config with manifest: /tmp/diarization_api_results\9c9d9797-df27-4af2-ac40-b0dba5f50429\audio_manifest.json and out_dir: /tmp/diarization_api_results\9c9d9797-df27-4af2-ac40-b0dba5f50429\diarization_output
+2025-07-01 00:45:31,656 - nemo_processor - INFO - ASR model loaded by ASRDecoderTimeStamps for this request.
+2025-07-01 00:45:31,656 - nemo_processor - INFO - Starting ASR inference for converted_input_0073ab4e-b7a0-4440-ac32-09d0cafb0c09.wav using asr_decoder_ts_instance...
+2025-07-01 00:48:44,240 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'M_0078_16y4m_1.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 168, in process_audio
+    word_hyp, word_ts_hyp = asr_decoder_ts_instance.run_ASR(asr_model_for_request) # type: ignore
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 458, in run_ASR_QuartzNet_CTC
+    logit_np = logit_np.cpu().numpy()
+               ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Got unsupported ScalarType BFloat16
+2025-07-01 00:48:44,332 - __main__ - ERROR - Processing failed for 'M_0078_16y4m_1.wav': An unexpected internal server error occurred while processing 'M_0078_16y4m_1.wav'. Please try again or contact support if the issue persists. Details: Got unsupported ScalarType BFloat16
+2025-07-01 00:48:44,341 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\9c9d9797-df27-4af2-ac40-b0dba5f50429
+2025-07-01 00:48:44,353 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 00:48:44] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-07-01 00:59:52,858 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-07-01 00:59:55,821 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 01:00:10,940 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 01:00:10,940 - nemo_processor - INFO - Attempting to load NeMo components (configuration only)...
+2025-07-01 01:00:10,940 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 01:00:10,948 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 01:00:10,948 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 01:00:10,963 - nemo_processor - INFO - Set torch default dtype to torch.float32
+2025-07-01 01:00:10,963 - nemo_processor - INFO - NeMo core ASR model loading delegated to per-request ASRDecoderTimeStamps.
+2025-07-01 01:00:10,963 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 01:00:10,979 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 01:00:10,982 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 01:01:17,366 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\app.py', reloading
+2025-07-01 01:01:18,518 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 01:01:28,362 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 01:01:28,362 - nemo_processor - INFO - Attempting to load NeMo components (configuration only)...
+2025-07-01 01:01:28,362 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 01:01:28,377 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 01:01:28,377 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 01:01:28,379 - nemo_processor - INFO - Set torch default dtype to torch.float32
+2025-07-01 01:01:28,379 - nemo_processor - INFO - NeMo core ASR model loading delegated to per-request ASRDecoderTimeStamps.
+2025-07-01 01:01:28,379 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 01:01:28,389 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 01:01:28,393 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 01:02:27,786 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-07-01 01:02:29,148 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 01:02:44,007 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 01:02:44,007 - nemo_processor - INFO - Attempting to load NeMo components (configuration only)...
+2025-07-01 01:02:44,009 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 01:02:44,027 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 01:02:44,027 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 01:02:44,028 - nemo_processor - INFO - Set torch default dtype to torch.float32
+2025-07-01 01:02:44,028 - nemo_processor - INFO - NeMo core ASR model loading delegated to per-request ASRDecoderTimeStamps.
+2025-07-01 01:02:44,029 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 01:02:44,042 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 01:02:44,048 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 01:02:44,876 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 01:02:44] "GET /apidocs/ HTTP/1.1" 200 -
+2025-07-01 01:02:45,088 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 01:02:45] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-07-01 01:02:45,105 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 01:02:45] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2025-07-01 01:02:45,110 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 01:02:45] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-07-01 01:02:45,114 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 01:02:45] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-07-01 01:02:45,279 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 01:02:45] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-07-01 01:02:45,288 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 01:02:45] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2025-07-01 01:02:55,575 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\b5e174bc-9d53-467b-83fa-5b7a9298c258
+2025-07-01 01:02:55,586 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\b5e174bc-9d53-467b-83fa-5b7a9298c258\M_0025_11y10m_1.wav
+2025-07-01 01:02:55,587 - audio_utils - INFO - Attempting to convert/resample 'M_0025_11y10m_1.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\b5e174bc-9d53-467b-83fa-5b7a9298c258\converted_input_22ba10f8-676c-49da-bb39-05772120e904.wav' using FFmpeg.
+2025-07-01 01:02:55,737 - audio_utils - INFO - FFmpeg conversion successful for 'M_0025_11y10m_1.wav'. Output: 'converted_input_22ba10f8-676c-49da-bb39-05772120e904.wav'
+2025-07-01 01:02:55,737 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\b5e174bc-9d53-467b-83fa-5b7a9298c258\diarization_output
+2025-07-01 01:02:55,739 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\b5e174bc-9d53-467b-83fa-5b7a9298c258\audio_manifest.json
+2025-07-01 01:02:55,743 - nemo_processor - INFO - Updated request-specific NeMo config with manifest: /tmp/diarization_api_results\b5e174bc-9d53-467b-83fa-5b7a9298c258\audio_manifest.json and out_dir: /tmp/diarization_api_results\b5e174bc-9d53-467b-83fa-5b7a9298c258\diarization_output
+2025-07-01 01:02:55,766 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'M_0025_11y10m_1.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 166, in process_audio
+    asr_model_for_request = asr_decoder_ts_instance.set_asr_model() # type: ignore
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 391, in set_asr_model
+    asr_model = self.encdec_class.from_pretrained(model_name=self.ASR_model_name, strict=False)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\core\classes\common.py", line 758, in from_pretrained
+    class_, nemo_model_file_in_cache = cls._get_ngc_pretrained_model_info(
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\core\classes\common.py", line 813, in _get_ngc_pretrained_model_info
+    raise FileNotFoundError(
+FileNotFoundError: Model Citrinet-1024 was not found. Check cls.list_available_models() for the list of all available models.
+2025-07-01 01:02:55,826 - __main__ - ERROR - Processing failed for 'M_0025_11y10m_1.wav': An unexpected internal server error occurred while processing 'M_0025_11y10m_1.wav'. Please try again or contact support if the issue persists. Details: Model Citrinet-1024 was not found. Check cls.list_available_models() for the list of all available models.
+2025-07-01 01:02:55,830 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\b5e174bc-9d53-467b-83fa-5b7a9298c258
+2025-07-01 01:02:55,831 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 01:02:55] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-07-01 01:04:11,148 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-07-01 01:04:12,489 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 01:04:26,697 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 01:04:26,698 - nemo_processor - INFO - Attempting to load NeMo components (configuration only)...
+2025-07-01 01:04:26,698 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 01:04:26,716 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 01:04:26,717 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 01:04:26,718 - nemo_processor - INFO - Set torch default dtype to torch.float32
+2025-07-01 01:04:26,719 - nemo_processor - INFO - NeMo core ASR model loading delegated to per-request ASRDecoderTimeStamps.
+2025-07-01 01:04:26,720 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 01:04:26,742 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 01:04:26,747 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 01:04:28,965 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\0461d4dd-46b6-42ac-b8c9-1ed80e876817
+2025-07-01 01:04:28,972 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\0461d4dd-46b6-42ac-b8c9-1ed80e876817\M_0025_11y10m_1.wav
+2025-07-01 01:04:28,973 - audio_utils - INFO - Attempting to convert/resample 'M_0025_11y10m_1.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\0461d4dd-46b6-42ac-b8c9-1ed80e876817\converted_input_92c8d94f-7a97-447b-bf8c-1a0985c32c3d.wav' using FFmpeg.
+2025-07-01 01:04:29,080 - audio_utils - INFO - FFmpeg conversion successful for 'M_0025_11y10m_1.wav'. Output: 'converted_input_92c8d94f-7a97-447b-bf8c-1a0985c32c3d.wav'
+2025-07-01 01:04:29,080 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\0461d4dd-46b6-42ac-b8c9-1ed80e876817\diarization_output
+2025-07-01 01:04:29,081 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\0461d4dd-46b6-42ac-b8c9-1ed80e876817\audio_manifest.json
+2025-07-01 01:04:29,085 - nemo_processor - INFO - Updated request-specific NeMo config with manifest: /tmp/diarization_api_results\0461d4dd-46b6-42ac-b8c9-1ed80e876817\audio_manifest.json and out_dir: /tmp/diarization_api_results\0461d4dd-46b6-42ac-b8c9-1ed80e876817\diarization_output
+2025-07-01 01:04:47,188 - nemo_processor - INFO - ASR model loaded by ASRDecoderTimeStamps for this request.
+2025-07-01 01:04:47,201 - nemo_processor - INFO - Starting ASR inference for converted_input_92c8d94f-7a97-447b-bf8c-1a0985c32c3d.wav using asr_decoder_ts_instance...
+2025-07-01 01:16:37,751 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'M_0025_11y10m_1.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 178, in process_audio
+    word_hyp, word_ts_hyp = asr_decoder_ts_instance.run_ASR(asr_model_for_request) # type: ignore
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 586, in run_ASR_CitriNet_CTC
+    log_prob = logit_np.cpu().numpy()
+               ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Got unsupported ScalarType BFloat16
+2025-07-01 01:16:37,774 - __main__ - ERROR - Processing failed for 'M_0025_11y10m_1.wav': An unexpected internal server error occurred while processing 'M_0025_11y10m_1.wav'. Please try again or contact support if the issue persists. Details: Got unsupported ScalarType BFloat16
+2025-07-01 01:16:37,783 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\0461d4dd-46b6-42ac-b8c9-1ed80e876817
+2025-07-01 01:16:37,805 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 01:16:37] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-07-01 01:22:29,015 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\c0616368-521b-4a2d-9206-c9d0202f374a
+2025-07-01 01:22:29,022 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\c0616368-521b-4a2d-9206-c9d0202f374a\M_0025_11y10m_1.wav
+2025-07-01 01:22:29,023 - audio_utils - INFO - Attempting to convert/resample 'M_0025_11y10m_1.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\c0616368-521b-4a2d-9206-c9d0202f374a\converted_input_29f1d327-c1bd-4675-953d-e03529d1e97c.wav' using FFmpeg.
+2025-07-01 01:22:29,174 - audio_utils - INFO - FFmpeg conversion successful for 'M_0025_11y10m_1.wav'. Output: 'converted_input_29f1d327-c1bd-4675-953d-e03529d1e97c.wav'
+2025-07-01 01:22:29,175 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\c0616368-521b-4a2d-9206-c9d0202f374a\diarization_output
+2025-07-01 01:22:29,176 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\c0616368-521b-4a2d-9206-c9d0202f374a\audio_manifest.json
+2025-07-01 01:22:29,184 - nemo_processor - INFO - Updated request-specific NeMo config with manifest: /tmp/diarization_api_results\c0616368-521b-4a2d-9206-c9d0202f374a\audio_manifest.json and out_dir: /tmp/diarization_api_results\c0616368-521b-4a2d-9206-c9d0202f374a\diarization_output
+2025-07-01 01:22:44,655 - nemo_processor - INFO - ASR model loaded by ASRDecoderTimeStamps for this request.
+2025-07-01 01:22:44,656 - nemo_processor - INFO - Starting ASR inference for converted_input_29f1d327-c1bd-4675-953d-e03529d1e97c.wav using asr_decoder_ts_instance...
+2025-07-01 01:24:06,724 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-07-01 01:24:09,133 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 01:24:26,710 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 01:24:26,711 - nemo_processor - INFO - Attempting to load NeMo components (configuration only)...
+2025-07-01 01:24:26,711 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 01:24:26,729 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 01:24:26,729 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 01:24:26,730 - nemo_processor - INFO - Set torch default dtype to torch.float32
+2025-07-01 01:24:26,731 - nemo_processor - INFO - NeMo core ASR model loading delegated to per-request ASRDecoderTimeStamps.
+2025-07-01 01:24:26,731 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 01:24:26,758 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 01:24:26,763 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 01:24:27,598 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\5cecb424-589f-49e7-a340-b44fa7374d0a
+2025-07-01 01:24:27,613 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\5cecb424-589f-49e7-a340-b44fa7374d0a\M_0025_11y10m_1.wav
+2025-07-01 01:24:27,614 - audio_utils - INFO - Attempting to convert/resample 'M_0025_11y10m_1.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\5cecb424-589f-49e7-a340-b44fa7374d0a\converted_input_7e7c68b3-8872-45e7-ac33-f163c330f0c6.wav' using FFmpeg.
+2025-07-01 01:24:27,722 - audio_utils - INFO - FFmpeg conversion successful for 'M_0025_11y10m_1.wav'. Output: 'converted_input_7e7c68b3-8872-45e7-ac33-f163c330f0c6.wav'
+2025-07-01 01:24:27,723 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\5cecb424-589f-49e7-a340-b44fa7374d0a\diarization_output
+2025-07-01 01:24:27,725 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\5cecb424-589f-49e7-a340-b44fa7374d0a\audio_manifest.json
+2025-07-01 01:24:27,728 - nemo_processor - INFO - Updated request-specific NeMo config with manifest: /tmp/diarization_api_results\5cecb424-589f-49e7-a340-b44fa7374d0a\audio_manifest.json and out_dir: /tmp/diarization_api_results\5cecb424-589f-49e7-a340-b44fa7374d0a\diarization_output
+2025-07-01 01:24:40,665 - nemo_processor - INFO - ASR model loaded by ASRDecoderTimeStamps for this request.
+2025-07-01 01:24:40,680 - nemo_processor - INFO - Cast ASR model to float32 for processing.
+2025-07-01 01:24:40,680 - nemo_processor - INFO - Starting ASR inference for converted_input_7e7c68b3-8872-45e7-ac33-f163c330f0c6.wav using asr_decoder_ts_instance...
+2025-07-01 01:36:32,883 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'M_0025_11y10m_1.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 191, in process_audio
+    word_hyp, word_ts_hyp = asr_decoder_ts_instance.run_ASR(asr_model_for_request) # type: ignore
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 586, in run_ASR_CitriNet_CTC
+    log_prob = logit_np.cpu().numpy()
+               ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Got unsupported ScalarType BFloat16
+2025-07-01 01:36:32,898 - __main__ - ERROR - Processing failed for 'M_0025_11y10m_1.wav': An unexpected internal server error occurred while processing 'M_0025_11y10m_1.wav'. Please try again or contact support if the issue persists. Details: Got unsupported ScalarType BFloat16
+2025-07-01 01:36:32,904 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\5cecb424-589f-49e7-a340-b44fa7374d0a
+2025-07-01 01:36:32,922 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 01:36:32] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-07-01 01:50:03,823 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-07-01 01:50:09,102 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 01:50:31,204 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 01:50:31,205 - nemo_processor - INFO - Attempting to load NeMo components (configuration only)...
+2025-07-01 01:50:31,206 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 01:50:31,242 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 01:50:31,242 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 01:50:31,245 - nemo_processor - INFO - Set torch default dtype to torch.float32
+2025-07-01 01:50:31,246 - nemo_processor - INFO - NeMo core ASR model loading delegated to per-request ASRDecoderTimeStamps.
+2025-07-01 01:50:31,246 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 01:50:31,266 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 01:50:31,277 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 01:51:12,933 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-07-01 01:51:14,522 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 01:51:28,246 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 01:51:28,246 - nemo_processor - INFO - Attempting to load NeMo components (configuration only)...
+2025-07-01 01:51:28,246 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 01:51:28,268 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 01:51:28,269 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 01:51:28,270 - nemo_processor - INFO - Set torch default dtype to torch.float32
+2025-07-01 01:51:28,270 - nemo_processor - INFO - NeMo core ASR model loading delegated to per-request ASRDecoderTimeStamps.
+2025-07-01 01:51:28,270 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 01:51:28,282 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 01:51:28,287 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 01:51:29,266 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\2d60b87a-6c1b-41be-88cc-78ae793907ed
+2025-07-01 01:51:29,281 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\2d60b87a-6c1b-41be-88cc-78ae793907ed\M_0025_11y10m_1.wav
+2025-07-01 01:51:29,283 - audio_utils - INFO - Attempting to convert/resample 'M_0025_11y10m_1.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\2d60b87a-6c1b-41be-88cc-78ae793907ed\converted_input_0d901f0d-9828-4d57-b84b-bddbe37afb89.wav' using FFmpeg.
+2025-07-01 01:51:29,423 - audio_utils - INFO - FFmpeg conversion successful for 'M_0025_11y10m_1.wav'. Output: 'converted_input_0d901f0d-9828-4d57-b84b-bddbe37afb89.wav'
+2025-07-01 01:51:29,424 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\2d60b87a-6c1b-41be-88cc-78ae793907ed\diarization_output
+2025-07-01 01:51:29,426 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\2d60b87a-6c1b-41be-88cc-78ae793907ed\audio_manifest.json
+2025-07-01 01:51:29,430 - nemo_processor - INFO - Updated request-specific NeMo config with manifest: /tmp/diarization_api_results\2d60b87a-6c1b-41be-88cc-78ae793907ed\audio_manifest.json and out_dir: /tmp/diarization_api_results\2d60b87a-6c1b-41be-88cc-78ae793907ed\diarization_output
+2025-07-01 01:51:47,849 - nemo_processor - INFO - ASR model loaded by ASRDecoderTimeStamps for this request.
+2025-07-01 01:51:47,851 - nemo_processor - INFO - ASR model set to evaluation mode.
+2025-07-01 01:51:47,877 - nemo_processor - INFO - Moved ASR model to CPU and explicitly cast to float32 for processing.
+2025-07-01 01:51:47,885 - nemo_processor - INFO - Starting ASR inference for converted_input_0d901f0d-9828-4d57-b84b-bddbe37afb89.wav using asr_decoder_ts_instance...
+2025-07-01 02:05:50,801 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'M_0025_11y10m_1.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 191, in process_audio
+    word_hyp, word_ts_hyp = asr_decoder_ts_instance.run_ASR(asr_model_for_request) # type: ignore
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 586, in run_ASR_CitriNet_CTC
+    log_prob = logit_np.cpu().numpy()
+               ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Got unsupported ScalarType BFloat16
+2025-07-01 02:05:50,837 - __main__ - ERROR - Processing failed for 'M_0025_11y10m_1.wav': An unexpected internal server error occurred while processing 'M_0025_11y10m_1.wav'. Please try again or contact support if the issue persists. Details: Got unsupported ScalarType BFloat16
+2025-07-01 02:05:50,845 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\2d60b87a-6c1b-41be-88cc-78ae793907ed
+2025-07-01 02:05:50,889 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 02:05:50] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-07-01 02:16:30,556 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-07-01 02:16:38,816 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 02:17:02,218 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 02:17:02,218 - nemo_processor - INFO - Attempting to load NeMo components (configuration only)...
+2025-07-01 02:17:02,219 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 02:17:02,250 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 02:17:02,251 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 02:17:02,254 - nemo_processor - INFO - Set torch default dtype to torch.float32
+2025-07-01 02:17:02,254 - nemo_processor - INFO - NeMo core ASR model loading delegated to per-request ASRDecoderTimeStamps.
+2025-07-01 02:17:02,254 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 02:17:02,275 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 02:17:02,285 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 02:17:08,443 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\3039adc8-c439-44d3-b9e4-e1c31363174a
+2025-07-01 02:17:08,617 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\3039adc8-c439-44d3-b9e4-e1c31363174a\output.wav
+2025-07-01 02:17:08,619 - audio_utils - INFO - Attempting to convert/resample 'output.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\3039adc8-c439-44d3-b9e4-e1c31363174a\converted_input_57718235-ea2b-4793-8e9e-90fb7e540335.wav' using FFmpeg.
+2025-07-01 02:17:09,189 - audio_utils - INFO - FFmpeg conversion successful for 'output.wav'. Output: 'converted_input_57718235-ea2b-4793-8e9e-90fb7e540335.wav'
+2025-07-01 02:17:09,190 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\3039adc8-c439-44d3-b9e4-e1c31363174a\diarization_output
+2025-07-01 02:17:09,191 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\3039adc8-c439-44d3-b9e4-e1c31363174a\audio_manifest.json
+2025-07-01 02:17:09,199 - nemo_processor - INFO - Updated request-specific NeMo config with manifest: /tmp/diarization_api_results\3039adc8-c439-44d3-b9e4-e1c31363174a\audio_manifest.json and out_dir: /tmp/diarization_api_results\3039adc8-c439-44d3-b9e4-e1c31363174a\diarization_output
+2025-07-01 02:17:28,794 - nemo_processor - INFO - ASR model loaded by ASRDecoderTimeStamps for this request.
+2025-07-01 02:17:28,794 - nemo_processor - INFO - ASR model set to evaluation mode.
+2025-07-01 02:17:28,836 - nemo_processor - INFO - Moved ASR model to CPU and explicitly cast to float32 for processing.
+2025-07-01 02:17:28,849 - nemo_processor - INFO - Starting ASR inference for converted_input_57718235-ea2b-4793-8e9e-90fb7e540335.wav using asr_decoder_ts_instance...
+2025-07-01 02:19:11,452 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'output.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 193, in process_audio
+    word_hyp, word_ts_hyp = asr_decoder_ts_instance.run_ASR(asr_model_for_request) # type: ignore
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 594, in run_ASR_CitriNet_CTC
+    log_prob = torch.from_numpy(logit_np)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected np.ndarray (got Tensor)
+2025-07-01 02:19:11,521 - __main__ - ERROR - Processing failed for 'output.wav': An unexpected internal server error occurred while processing 'output.wav'. Please try again or contact support if the issue persists. Details: expected np.ndarray (got Tensor)
+2025-07-01 02:19:11,558 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\3039adc8-c439-44d3-b9e4-e1c31363174a
+2025-07-01 02:19:11,621 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 02:19:11] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-07-01 02:20:39,525 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-07-01 02:20:44,121 - werkzeug - INFO -  * Restarting with stat
+2025-07-01 02:21:08,793 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-01 02:21:08,793 - nemo_processor - INFO - Attempting to load NeMo components (configuration only)...
+2025-07-01 02:21:08,794 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-01 02:21:08,821 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-01 02:21:08,821 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-01 02:21:08,823 - nemo_processor - INFO - Set torch default dtype to torch.float32
+2025-07-01 02:21:08,823 - nemo_processor - INFO - NeMo core ASR model loading delegated to per-request ASRDecoderTimeStamps.
+2025-07-01 02:21:08,823 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-01 02:21:08,841 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 02:21:08,850 - werkzeug - INFO -  * Debugger PIN: 942-912-356
+2025-07-01 02:21:27,044 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 02:21:27] "GET /apidocs/ HTTP/1.1" 200 -
+2025-07-01 02:21:27,537 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 02:21:27] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-07-01 02:21:27,545 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 02:21:27] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2025-07-01 02:21:27,553 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 02:21:27] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-07-01 02:21:27,557 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 02:21:27] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-07-01 02:21:27,802 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 02:21:27] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-07-01 02:21:27,812 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 02:21:27] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2025-07-01 02:21:40,270 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\d6cf8ce4-b475-427f-86d9-f39f6e86db1f
+2025-07-01 02:21:40,288 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\d6cf8ce4-b475-427f-86d9-f39f6e86db1f\M_0078_16y4m_1.wav
+2025-07-01 02:21:40,291 - audio_utils - INFO - Attempting to convert/resample 'M_0078_16y4m_1.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\d6cf8ce4-b475-427f-86d9-f39f6e86db1f\converted_input_e0816256-c5ef-43aa-8b82-0b9fb4e89cf8.wav' using FFmpeg.
+2025-07-01 02:21:40,506 - audio_utils - INFO - FFmpeg conversion successful for 'M_0078_16y4m_1.wav'. Output: 'converted_input_e0816256-c5ef-43aa-8b82-0b9fb4e89cf8.wav'
+2025-07-01 02:21:40,507 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\d6cf8ce4-b475-427f-86d9-f39f6e86db1f\diarization_output
+2025-07-01 02:21:40,509 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\d6cf8ce4-b475-427f-86d9-f39f6e86db1f\audio_manifest.json
+2025-07-01 02:21:40,516 - nemo_processor - INFO - Updated request-specific NeMo config with manifest: /tmp/diarization_api_results\d6cf8ce4-b475-427f-86d9-f39f6e86db1f\audio_manifest.json and out_dir: /tmp/diarization_api_results\d6cf8ce4-b475-427f-86d9-f39f6e86db1f\diarization_output
+2025-07-01 02:21:59,338 - nemo_processor - INFO - ASR model loaded by ASRDecoderTimeStamps for this request.
+2025-07-01 02:21:59,342 - nemo_processor - INFO - ASR model set to evaluation mode.
+2025-07-01 02:21:59,369 - nemo_processor - INFO - Moved ASR model to CPU and aggressively cast all bfloat16 parameters to float32.
+2025-07-01 02:21:59,370 - nemo_processor - INFO - Starting ASR inference for converted_input_e0816256-c5ef-43aa-8b82-0b9fb4e89cf8.wav using asr_decoder_ts_instance...
+2025-07-01 02:45:24,709 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'M_0078_16y4m_1.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 192, in process_audio
+    word_hyp, word_ts_hyp = asr_decoder_ts_instance.run_ASR(asr_model_for_request) # type: ignore
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 586, in run_ASR_CitriNet_CTC
+    log_prob = logit_np.cpu().numpy()
+               ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Got unsupported ScalarType BFloat16
+2025-07-01 02:45:24,736 - __main__ - ERROR - Processing failed for 'M_0078_16y4m_1.wav': An unexpected internal server error occurred while processing 'M_0078_16y4m_1.wav'. Please try again or contact support if the issue persists. Details: Got unsupported ScalarType BFloat16
+2025-07-01 02:45:24,743 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\d6cf8ce4-b475-427f-86d9-f39f6e86db1f
+2025-07-01 02:45:24,751 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 02:45:24] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-07-01 03:08:00,841 - __main__ - INFO - Created temporary session directory: /tmp/diarization_api_results\9d92966e-8981-4ec6-9fb0-2d61ec547268
+2025-07-01 03:08:00,876 - nemo_processor - INFO - Saved uploaded audio to: /tmp/diarization_api_results\9d92966e-8981-4ec6-9fb0-2d61ec547268\M_0078_16y4m_1.wav
+2025-07-01 03:08:00,876 - audio_utils - INFO - Attempting to convert/resample 'M_0078_16y4m_1.wav' to 16kHz mono WAV at '/tmp/diarization_api_results\9d92966e-8981-4ec6-9fb0-2d61ec547268\converted_input_3d1c98b7-133c-4c24-802f-594e1211ee4b.wav' using FFmpeg.
+2025-07-01 03:08:01,140 - audio_utils - INFO - FFmpeg conversion successful for 'M_0078_16y4m_1.wav'. Output: 'converted_input_3d1c98b7-133c-4c24-802f-594e1211ee4b.wav'
+2025-07-01 03:08:01,140 - nemo_processor - INFO - Created output directory for NeMo: /tmp/diarization_api_results\9d92966e-8981-4ec6-9fb0-2d61ec547268\diarization_output
+2025-07-01 03:08:01,144 - nemo_processor - INFO - Created manifest at: /tmp/diarization_api_results\9d92966e-8981-4ec6-9fb0-2d61ec547268\audio_manifest.json
+2025-07-01 03:08:01,153 - nemo_processor - INFO - Updated request-specific NeMo config with manifest: /tmp/diarization_api_results\9d92966e-8981-4ec6-9fb0-2d61ec547268\audio_manifest.json and out_dir: /tmp/diarization_api_results\9d92966e-8981-4ec6-9fb0-2d61ec547268\diarization_output
+2025-07-01 03:08:23,426 - nemo_processor - INFO - ASR model loaded by ASRDecoderTimeStamps for this request.
+2025-07-01 03:08:23,431 - nemo_processor - INFO - ASR model set to evaluation mode.
+2025-07-01 03:08:23,453 - nemo_processor - INFO - Moved ASR model to CPU and aggressively cast all bfloat16 parameters to float32.
+2025-07-01 03:08:23,455 - nemo_processor - INFO - Starting ASR inference for converted_input_3d1c98b7-133c-4c24-802f-594e1211ee4b.wav using asr_decoder_ts_instance...
+2025-07-01 03:31:56,767 - nemo_processor - ERROR - An unexpected error occurred during NeMo processing for 'M_0078_16y4m_1.wav'.
+Traceback (most recent call last):
+  File "C:\Users\tac03\Music\nvidaPipeline\nemo_processor.py", line 192, in process_audio
+    word_hyp, word_ts_hyp = asr_decoder_ts_instance.run_ASR(asr_model_for_request) # type: ignore
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tac03\Music\nvidaPipeline\venv\Lib\site-packages\nemo\collections\asr\parts\utils\decoder_timestamps_utils.py", line 586, in run_ASR_CitriNet_CTC
+    log_prob = logit_np.cpu().numpy()
+               ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Got unsupported ScalarType BFloat16
+2025-07-01 03:31:56,775 - __main__ - ERROR - Processing failed for 'M_0078_16y4m_1.wav': An unexpected internal server error occurred while processing 'M_0078_16y4m_1.wav'. Please try again or contact support if the issue persists. Details: Got unsupported ScalarType BFloat16
+2025-07-01 03:31:56,780 - __main__ - INFO - Cleaned up temporary directory: /tmp/diarization_api_results\9d92966e-8981-4ec6-9fb0-2d61ec547268
+2025-07-01 03:31:56,789 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2025 03:31:56] "[35m[1mPOST /diarize HTTP/1.1[0m" 500 -
+2025-07-03 08:39:55,350 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tac03\\Music\\nvidaPipeline\\nemo_processor.py', reloading
+2025-07-03 08:40:02,959 - werkzeug - INFO -  * Restarting with stat
+2025-07-03 08:42:03,487 - __main__ - INFO - Starting NeMo component loading process...
+2025-07-03 08:42:03,487 - nemo_processor - INFO - Attempting to load NeMo components (configuration only)...
+2025-07-03 08:42:03,487 - nemo_processor - INFO - Loading configuration from: diar_infer_meeting.yaml
+2025-07-03 08:42:03,520 - nemo_processor - INFO - Successfully loaded configuration from YAML.
+2025-07-03 08:42:03,520 - nemo_processor - INFO - Applying hardcoded model path overrides and parameters.
+2025-07-03 08:42:03,520 - nemo_processor - INFO - Set torch default dtype to torch.float32
+2025-07-03 08:42:03,520 - nemo_processor - INFO - NeMo core ASR model loading delegated to per-request ASRDecoderTimeStamps.
+2025-07-03 08:42:03,525 - __main__ - INFO - NeMo components successfully loaded at application startup.
+2025-07-03 08:42:03,608 - werkzeug - WARNING -  * Debugger is active!
+2025-07-03 08:42:03,617 - werkzeug - INFO -  * Debugger PIN: 942-912-356
