@@ -1,223 +1,173 @@
-Speaker Diarization API with NeMo and Flask
-This project provides a RESTful API built with Flask that leverages NVIDIA NeMo for advanced speaker diarization and Automatic Speech Recognition (ASR). It allows you to upload audio files and receive a transcript with identified speakers and their respective timestamps.
+# Speaker Diarization API with NeMo and Flask
 
-✨ Features
-Speaker Diarization: Identifies and separates different speakers in an audio recording.
+This project provides a powerful RESTful API built with Flask, leveraging NVIDIA NeMo for advanced speaker diarization and Automatic Speech Recognition (ASR). Upload an audio file and receive a detailed transcript, identifying who spoke when.
 
-Automatic Speech Recognition (ASR): Transcribes speech to text.
+---
 
-Combined Output: Provides a single output with speaker labels, start/end times, and transcribed text for each segment.
+## ✨ Key Features
 
-RESTful API: Easy integration with other applications via HTTP requests.
+* **Speaker Diarization:** Automatically identifies and separates distinct speakers in an audio recording.
+* **Automatic Speech Recognition (ASR):** Converts spoken words into text.
+* **Unified Output:** Provides a single, easy-to-read transcript with speaker labels, precise start/end times, and the corresponding text for each segment.
+* **RESTful Interface:** Designed for easy integration with other applications or services via HTTP requests.
+* **Flexible Configuration:** Customize settings using environment variables for different deployment needs.
+* **Robust Error Handling:** Clear and informative error messages to aid in troubleshooting.
+* **Comprehensive Logging:** Detailed logs for monitoring application activity and debugging.
 
-Configurable: Uses environment variables for flexible deployment and settings.
+---
 
-Robust Error Handling: Provides informative error messages for common issues.
+## 🚀 Getting Started
 
-Logging: Comprehensive logging for monitoring and debugging.
+### Prerequisites
 
-🚀 Prerequisites
-Before you begin, ensure you have the following installed on your system:
+Before you set up the project, ensure you have the following installed:
 
-Python 3.8+: The programming language for this application.
+* **Python 3.8+**: The programming language for this application.
+* **Git**: For cloning the repository.
+* **FFmpeg**: An essential tool for audio format conversion. This application uses FFmpeg to convert various audio types into the standard WAV format required by NeMo.
 
-Git: For cloning the repository.
+    * **Installation Commands:**
+        * **Ubuntu/Debian:** `sudo apt update && sudo apt install ffmpeg`
+        * **macOS (Homebrew):** `brew install ffmpeg`
+        * **Windows:** Download from [ffmpeg.org](https://ffmpeg.org/download.html) and add it to your system's PATH.
 
-FFmpeg: An essential tool for audio format conversion.
+### Setup Instructions
 
-What it means: Your audio_utils.py script uses FFmpeg behind the scenes to convert various audio types into a standard WAV format that NeMo can process. Without FFmpeg, audio conversion will fail.
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+    cd YOUR_REPOSITORY_NAME
+    ```
 
-Installation:
+2.  **Create & Activate Virtual Environment:**
+    It's best practice to use a virtual environment to manage project dependencies.
+    ```bash
+    python -m venv venv
+    # On macOS/Linux:
+    source venv/bin/activate
+    # On Windows (Command Prompt):
+    venv\Scripts\activate.bat
+    # On Windows (PowerShell):
+    venv\Scripts\Activate.ps1
+    ```
 
-Ubuntu/Debian: sudo apt update && sudo apt install ffmpeg
+3.  **Install Python Dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+    **Note on GPU Support (PyTorch):** If you have a CUDA-enabled GPU, install PyTorch with the correct CUDA version for faster processing. Refer to the comments in `requirements.txt` for specific commands (e.g., `pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu118`).
 
-macOS (using Homebrew): brew install ffmpeg
+4.  **Configure Environment Variables (`.env` file):**
+    Create a file named `.env` in the root of your project (next to `app.py`) and add your configurations:
+    ```ini
+    # .env file content
+    LOG_LEVEL=INFO
+    FLASK_PORT=5000
+    FLASK_DEBUG=False # Set to True for development, False for production
 
-Windows: Download from ffmpeg.org and add it to your system's PATH.
+    MODEL_CONFIG_DIR=conf
+    NEMO_LOG_LEVEL=INFO
 
-⚙️ Setup Instructions
-Follow these steps to get your project up and running locally.
+    TEMP_AUDIO_DIR=tmp_audio
+    ```
 
-1. Clone the Repository
-First, clone this repository to your local machine:
+---
 
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
-cd YOUR_REPOSITORY_NAME # Navigate into your project directory
+## 🚀 Usage
 
-What it means: This downloads all the project files to your computer and moves you into the main project folder.
+1.  **Run the Flask Application:**
+    ```bash
+    python app.py
+    ```
+    The server will start, and NeMo models will begin loading. This initial loading can take several minutes as large models are downloaded and cached. Subsequent runs will be faster.
 
-2. Create a Virtual Environment
-It's highly recommended to use a virtual environment to manage project dependencies.
+2.  **Check API Status:**
+    Verify the API is ready by checking the `/status` endpoint:
+    ```bash
+    curl http://127.0.0.1:5000/status
+    ```
+    Expected output (if ready):
+    ```json
+    {"errors": [], "nemo_components_loaded": true, "status": "ready"}
+    ```
 
-python -m venv venv
+3.  **Diarize an Audio File:**
+    Send a POST request with your audio file to the `/diarize` endpoint:
+    ```bash
+    curl -X POST -F "audio=@/path/to/your/audio.wav" http://127.0.0.1:5000/diarize
+    ```
+    Replace `/path/to/your/audio.wav` with the actual path to your audio file. The API supports various formats (MP3, OGG, etc.) thanks to FFmpeg.
 
-What it means: This creates an isolated Python environment named venv in your project directory. This prevents conflicts with other Python projects on your system.
-
-3. Activate the Virtual Environment
-Activate the virtual environment based on your operating system:
-
-macOS/Linux:
-
-source venv/bin/activate
-
-Windows (Command Prompt):
-
-venv\Scripts\activate.bat
-
-Windows (PowerShell):
-
-venv\Scripts\Activate.ps1
-
-What it means: Activating the virtual environment ensures that any Python packages you install are specific to this project. Your terminal prompt might change to indicate the active environment (e.g., (venv) your_username@your_machine:~/your_project$).
-
-4. Install Python Dependencies
-Install all the required Python packages using pip:
-
-pip install -r requirements.txt
-
-What it means: This command reads the requirements.txt file and installs all the necessary libraries like Flask, NeMo, PyTorch, etc., into your active virtual environment.
-
-Note on PyTorch (for GPU support):
-If you have a CUDA-enabled GPU and want to leverage it for faster processing with NeMo, you MUST install PyTorch with the correct CUDA version. The requirements.txt file includes comments with examples. For instance, for CUDA 11.8:
-
-pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu118
-
-What it means: This command tells pip to download PyTorch packages specifically compiled for a particular CUDA version, which is necessary for GPU acceleration. If you don't do this, PyTorch will default to CPU, which is slower.
-
-5. Configure Environment Variables (.env file)
-Create a file named .env in the root directory of your project (the same directory as app.py). This file will store your environment-specific configurations.
-
-# .env file content
-# --- Application Configuration (for app.py) ---
-LOG_LEVEL=INFO
-FLASK_PORT=5000
-FLASK_DEBUG=False # Set to True for development, False for production
-
-# --- NeMo Processor Configuration (for nemo_processor.py) ---
-# Directory where NeMo model configuration YAMLs are located
-MODEL_CONFIG_DIR=conf
-# Logging level for NeMo specific messages (e.g., INFO, DEBUG, WARNING, ERROR)
-NEMO_LOG_LEVEL=INFO
-
-# --- Audio Utilities Configuration (for audio_utils.py) ---
-# Temporary directory for audio conversions and NeMo outputs
-TEMP_AUDIO_DIR=tmp_audio
-
-What it means: This file allows you to customize settings like the server port, logging levels, and temporary directories without modifying the Python code directly. FLASK_DEBUG=False is recommended for production environments.
-
-🚀 Usage
-1. Run the Flask Application
-Once all dependencies are installed and your .env file is set up, you can start the Flask server:
-
-python app.py
-
-What it means: This command executes app.py, which initializes the Flask web server and loads the NeMo models into memory. You will see log messages indicating the server starting and NeMo components loading.
-
-Initial Loading: The first time you run the application, NeMo models will be downloaded (if not cached) and loaded. This can take a significant amount of time (several minutes) depending on your internet connection and system resources. Subsequent runs will be faster as models will be cached.
-
-2. Check API Status
-You can check if the NeMo components are loaded and the API is ready by accessing the /status endpoint:
-
-curl http://127.0.0.1:5000/status
-
-Expected Output (if ready):
-
-{
-  "errors": [],
-  "nemo_components_loaded": true,
-  "status": "ready"
-}
-
-What it means: This command sends a request to your API to verify that all the necessary NeMo models have been successfully loaded and the system is operational.
-
-3. Diarize an Audio File
-To diarize an audio file, send a POST request to the /diarize endpoint with your audio file.
-
-curl -X POST -F "audio=@/path/to/your/audio.wav" http://127.0.0.1:5000/diarize
-
-Replace /path/to/your/audio.wav with the actual path to your audio file (e.g., audio.mp3, meeting.ogg). The API supports various audio formats thanks to FFmpeg.
-
-Expected Output:
-
-{
-  "conversation": [
+    Expected output (JSON):
+    ```json
     {
-      "speaker": "SPEAKER_00",
-      "start_time": 0.0,
-      "end_time": 2.5,
-      "text": "Hello, how are you doing today?"
-    },
-    {
-      "speaker": "SPEAKER_01",
-      "start_time": 3.0,
-      "end_time": 5.8,
-      "text": "I'm doing great, thanks for asking!"
+      "conversation": [
+        {
+          "speaker": "SPEAKER_00",
+          "start_time": 0.0,
+          "end_time": 2.5,
+          "text": "Hello, how are you doing today?"
+        },
+        {
+          "speaker": "SPEAKER_01",
+          "start_time": 3.0,
+          "end_time": 5.8,
+          "text": "I'm doing great, thanks for asking!"
+        }
+        // ... more conversation segments
+      ]
     }
-    // ... more conversation segments
-  ]
-}
+    ```
 
-What it means: This command sends your audio file to the API. The API then processes it using NeMo's ASR and diarization models, and returns a structured JSON response containing the transcribed text, speaker labels, and timestamps for each spoken segment.
+---
 
-🧠 Understanding the ML Pipeline
-This API implements a Machine Learning (ML) pipeline for speaker diarization and ASR. Here's a simplified breakdown of how an audio file goes from input to a fully diarized transcript:
+## 🧠 Understanding the Machine Learning Pipeline
 
-Audio Input & Pre-processing (app.py, audio_utils.py)
+This API processes audio through a sophisticated Machine Learning pipeline to deliver accurate speaker diarization and transcription. Here's a step-by-step breakdown:
 
-What it means: When you send an audio file to the /diarize endpoint, the app.py receives it. This raw audio can be in various formats (MP3, OGG, etc.).
+### 1. Audio Ingestion & Pre-processing
 
-How it works: The app.py then uses the audio_utils.py module to convert this audio into a standard format (16kHz sample rate, mono channel, 16-bit WAV). This step is crucial because NeMo models expect a very specific audio format.
+* **What happens:** Your raw audio file (e.g., MP3, OGG) is received by the Flask API.
+* **ML relevance:** Before any ML models can work, the audio needs to be in a very specific, clean format. The `audio_utils.py` module uses FFmpeg to convert the input audio to a standardized 16kHz sample rate, mono channel, 16-bit WAV format. This ensures compatibility and optimal performance for the downstream NeMo models.
 
-NeMo Model Initialization (nemo_processor.py, diar_infer_meeting.yaml)
+### 2. NeMo Model Initialization
 
-What it means: Before processing any audio, the application needs to load the "brains" of the operation – the NeMo models. This happens only once when the Flask application starts up.
+* **What happens:** When the Flask application first starts, the necessary NeMo ML models are loaded into memory.
+* **ML relevance:** This crucial step involves reading the configuration (`diar_infer_meeting.yaml`) to identify which ASR and speaker diarization models to use (e.g., a Conformer-based ASR model and a TitaNet speaker embedding model). Loading these large, pre-trained neural networks once at startup prevents delays for every new request, making the API responsive.
 
-How it works: The nemo_processor.py module reads the diar_infer_meeting.yaml file to understand which NeMo models to use (e.g., specific ASR models like stt_en_citrinet and speaker embedding models like titanet_large). It then loads these large models into your computer's memory, making them ready for fast processing.
+### 3. Automatic Speech Recognition (ASR)
 
-Automatic Speech Recognition (ASR) (nemo_processor.py)
+* **What happens:** The pre-processed audio is fed into the ASR model.
+* **ML relevance:** The ASR model (a deep learning model trained on vast amounts of speech data) analyzes the audio's acoustic patterns and converts them into text. It not only provides the words but also precise timestamps for each word, which is vital for later combining with speaker information.
 
-What it means: Once the audio is pre-processed, the first ML step is to convert the speech into text.
+### 4. Speaker Diarization
 
-How it works: The nemo_processor.py feeds the standardized audio to the loaded ASR model. This model generates a transcript of what was said, along with precise timestamps for each word.
+* **What happens:** Simultaneously or sequentially, the speaker diarization component processes the audio.
+* **ML relevance:** This part of the pipeline uses various ML techniques (like voice activity detection, speaker embedding extraction, and clustering algorithms) to identify segments of speech and group them by speaker. It determines "who spoke when," assigning unique identifiers (e.g., SPEAKER_00, SPEAKER_01) to each detected voice.
 
-Speaker Diarization (nemo_processor.py)
+### 5. Result Integration & Formatting
 
-What it means: At the same time, or shortly after ASR, the pipeline identifies who spoke when.
+* **What happens:** The separate outputs from ASR (text and word timestamps) and Speaker Diarization (speaker turns) are merged.
+* **ML relevance:** This final step intelligently combines the information. The system aligns the transcribed words with the speaker segments, ensuring that each piece of text is correctly attributed to the speaker who uttered it, along with their exact start and end times. The result is then formatted into a clear JSON structure for the API response.
 
-How it works: The nemo_processor.py uses the speaker diarization model. This model analyzes the audio and determines distinct speakers (e.g., "SPEAKER_00", "SPEAKER_01"). It outputs information about when each speaker started and stopped talking.
+---
 
-Result Combination & Formatting (nemo_processor.py)
+## 📁 Project Structure
 
-What it means: The final step is to bring the text (from ASR) and the speaker information (from diarization) together into one easy-to-read output.
+* `app.py`: The main Flask application, defining API routes and orchestrating the ML pipeline.
+* `audio_utils.py`: Handles audio conversion using FFmpeg.
+* `nemo_processor.py`: Contains the core logic for loading NeMo models, executing the ASR and Diarization steps, and combining their outputs.
+* `diar_infer_meeting.yaml`: Configuration file for the NeMo ML models and pipeline parameters.
+* `requirements.txt`: Lists all Python package dependencies.
+* `.env`: (Not committed to Git) Stores environment-specific configurations.
+* `.gitignore`: Specifies files and directories to be ignored by Git.
 
-How it works: The nemo_processor.py takes the word timestamps from ASR and the speaker segments from diarization. It then intelligently combines them, assigning each piece of transcribed text to the correct speaker and providing the exact start and end times for their speech turn. This combined information is then formatted into the JSON response you receive.
+---
 
-📁 Project Structure
-app.py: The main Flask application file, defining API routes and orchestrating calls to other modules.
+## 🪵 Logging
 
-audio_utils.py: Contains utility functions for audio file conversion (e.g., to WAV format using FFmpeg).
+The application logs messages to both the console and a file (`./logs/diarization_api.log`). Adjust the `LOG_LEVEL` and `NEMO_LOG_LEVEL` in your `.env` file to control the verbosity (e.g., `INFO`, `DEBUG`, `WARNING`, `ERROR`). Logging helps monitor the application's activity and diagnose issues.
 
-nemo_processor.py: Encapsulates the core NeMo logic for loading models, running ASR, performing diarization, and combining results.
+---
 
-diar_infer_meeting.yaml: The configuration file for the NeMo diarization pipeline, specifying model paths and parameters.
-
-requirements.txt: Lists all Python dependencies required for the project.
-
-.env: (Not committed to Git) Stores environment variables for configuration.
-
-.gitignore: Specifies files and directories that Git should ignore (e.g., virtual environments, logs, temporary files, .env).
-
-🪵 Logging
-The application is configured to log messages to both the console and a file (./logs/diarization_api.log). You can control the logging level (e.g., INFO, DEBUG, WARNING, ERROR) via the LOG_LEVEL environment variable in your .env file. NeMo's internal logging level can also be adjusted via NEMO_LOG_LEVEL.
-
-What it means: Logging helps you monitor the application's activity, track the progress of audio processing, and diagnose any issues that might arise.
-
-🐛 Troubleshooting
-FFmpeg not found error: Ensure FFmpeg is correctly installed on your system and its executable directory is added to your system's PATH environment variable.
-
-NeMo model download issues: Check your internet connection. Large NeMo models are downloaded on first use. If downloads are interrupted, you might need to clear the NeMo cache (typically in ~/.cache/torch/NeMo or ~/.cache/huggingface/hub) and retry.
-
-ModuleNotFoundError: Make sure you have activated your virtual environment and installed all dependencies from requirements.txt.
-
-Argument of type "list[Unknown]" cannot be assigned... (Pylance error): This is a type-checking hint. Ensure your nemo_processor.py has the cast operation for rttm_to_labels as discussed in previous conversations to help the type checker. The code should still run correctly even if Pylance shows this warning without the cast.
 
